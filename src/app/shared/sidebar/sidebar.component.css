@@ -1,7 +1,10 @@
 .navbar-design {
-    margin-top: -9px;
     background: #5e656b;
-    padding-bottom: 16px;
+    text-align: center;
+}
+
+.navbar-dropdown {
+    background: #5e656b;
 }
 
 li a {

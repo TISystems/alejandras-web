@@ -1,24 +1,32 @@
-<ul class="nav justify-content-center">
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS</a>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">PROFESIONALES</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">NOSOTROS</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link d" href="#">CONTACTO</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link d" href="#">PROMOCIONES</a>
-    </li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-design">
+     
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" (click)="toggleServicios()">SERVICIOS</a>
+            <div class="dropdown-menu navbar-dropdown" [ngClass]="{ 'show': serviciosOpen }">
+                <a class="dropdown-item" href="#">Servicio 1</a>
+                <a class="dropdown-item" href="#">Servicio 2</a>
+                <a class="dropdown-item" href="#">Servicio 3</a>
+            </div>
+        </li>
+  
+        <li class="nav-item">
+            <a class="nav-link" href="#">PRODUCTOS</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">UBICACIÓN</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">CONTACTO</a>
+          </li>
+      </ul>
+    </div>
+  </nav>

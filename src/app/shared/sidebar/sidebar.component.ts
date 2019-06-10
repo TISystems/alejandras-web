@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  navbarOpen = false;
+  serviciosOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+
+  toggleServicios() {
+    this.serviciosOpen = !this.serviciosOpen;
+  }
+
   constructor() { }
 
   ngOnInit() {
