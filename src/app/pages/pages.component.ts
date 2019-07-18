@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
-  porcentaje: number = 50;
+  porcentaje: number = 2050;
 
   constructor() { }
 
