@@ -1,0 +1,47 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4">
+            <img [src]="galeria.img" [alt]="galeria.nombre" class="img-fluid">
+            <br><br>
+            <a [routerLink]="['/galeria']" class="btn btn-outline-danger btn-block">Regresar a Galería</a>
+        </div>
+        <div class="col-md-8">
+            <h3>{{galeria.nombre}}</h3>
+            <hr>
+            <p>{{galeria.descripcion}}</p>
+            <hr>
+            <form>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationServer01">Nombre</label>
+                        <input type="text" class="form-control " id="validationServer01" placeholder="Ingrese su Nombre" value="">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationServer02">Apellido</label>
+                        <input type="text" class="form-control " id="validationServer02" placeholder="Ingrese su Apellido" value="">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <label for="validationServer05">Número de teléfono</label>
+                        <input type="text" class="form-control " id="validationServer05" placeholder="Ingrese Teléfono">
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-outline-success" type="submit">Solicitar llamado</button>
+            </form>
+        </div>
+
+    </div>
+</div>

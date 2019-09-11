@@ -1,1 +1,224 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.top-ico {
+    padding-top: 6px;
+    padding-right: 6px;
+}
+
+.margin-ico {
+    padding-right: 6px;
+}
+
+footer {
+    color: white;
+    width: 100%;
+    background: #202020;
+}
+
+.background {
+    background-color: darkslateblue;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    padding: 40px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between
+}
+
+.column1 {
+    max-width: 400px;
+    width: 100%;
+}
+
+.column1 h1 {
+    font-size: 12px;
+}
+
+.column1 p {
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.column2 {
+    max-width: 400px;
+}
+
+.column2 h1 {
+    font-size: 14px;
+}
+
+.row {
+    margin-top: 5px;
+    display: flex;
+}
+
+.column2 .row {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row label {
+    margin-top: 0px;
+    margin-left: 20px;
+    color: #C7C7C7;
+    font-size: 12px;
+}
+
+.column3 {
+    max-width: 400px;
+}
+
+.column3 h1 {
+    font-size: 14px;
+}
+
+.row2 {
+    margin-top: 5px;
+    display: flex;
+}
+
+.row2 img {
+    width: 30px;
+    height: 30px;
+}
+
+.row2 label {
+    margin-left: 20px;
+    color: #C7C7C7;
+    display: flex;
+    max-width: 250px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.container-footer {
+    background: #101010;
+    width: 100%;
+    padding: 20px
+}
+
+.copyright {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.information a {
+    text-decoration: none;
+    color: white
+}
+
+.footerr {
+    text-align: center;
+    font-size: 10px;
+}
+
+.footerr .copyright a {
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width:1100px) {
+    .container-body {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:715px) {
+    .column2,
+    .column3 {
+        margin-top: 40px;
+    }
+}
+
+.text-item {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.down-item {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+
+.menu a {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a img {
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.imagen {
+    bottom: 0;
+    height: 0px;
+    width: 0%;
+    z-index: 20;
+}
+
+.menu a:hover .imagen {
+    width: 100%;
+    height: 50%;
+}
+
+.menu a:hover .text-item {
+    text-align: center;
+}
+
+.main-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*Animaciones*/
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}

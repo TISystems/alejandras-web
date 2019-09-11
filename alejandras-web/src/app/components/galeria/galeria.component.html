@@ -1,0 +1,18 @@
+<div class="container">
+    <h1><small>Nuestros Trabajos&nbsp;</small>Profesionales</h1>
+    <hr>
+    <div class="card-columns">
+
+        <div class="card animated fadeIn fast" *ngFor="let galeria of galerias; let i = index ">
+            <img [src]="galeria.img" class="card-img-top" [alt]="galeria.nombre">
+            <div class="card-body">
+                <h5 class="card-title">{{galeria.nombre}}</h5>
+                <p class="card-text">{{galeria.descripcion}}</p>
+                <button (click)="verHeroe(i)" type="button" [routerLink]="['/reservas']" class="btn btn-outline-success btn-block">Lo quiero..</button>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
