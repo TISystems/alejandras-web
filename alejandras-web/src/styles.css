@@ -11,13 +11,17 @@
 }
 
 .margin-ico {
+    padding-right: 26px;
+}
+
+.margin-icof {
     padding-right: 6px;
 }
 
 footer {
     color: white;
     width: 100%;
-    background: #202020;
+    background: #701A7F;
 }
 
 .background {
@@ -105,7 +109,8 @@ footer {
 }
 
 .container-footer {
-    background: #101010;
+    background: #701A7F;
+    ;
     width: 100%;
     padding: 20px
 }

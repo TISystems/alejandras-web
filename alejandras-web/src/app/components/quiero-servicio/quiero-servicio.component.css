@@ -1,0 +1,17 @@
+.font-color {
+    color: #3D1058;
+}
+
+.bg-color {
+    background-color: #641672;
+}
+
+.btn-color {
+    color: #3D1058;
+    border: 1.5px solid #3D1058;
+}
+
+button:hover {
+    background-color: #3D1058;
+    color: white;
+}

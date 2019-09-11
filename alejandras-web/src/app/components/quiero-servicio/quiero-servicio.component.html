@@ -4,24 +4,24 @@
         <div class="col-md-4">
             <img [src]="galeria.img" [alt]="galeria.nombre" class="img-fluid">
             <br><br>
-            <a [routerLink]="['/galeria']" class="btn btn-outline-danger btn-block">Regresar a Galería</a>
+            <button [routerLink]="['/galeria']" class="btn  btn-block btn-color">Regresar a Galería</button>
         </div>
         <div class="col-md-8">
-            <h3>{{galeria.nombre}}</h3>
-            <hr>
-            <p>{{galeria.descripcion}}</p>
-            <hr>
+            <h3 class="font-color">{{galeria.nombre}}</h3>
+            <hr class="bg-color">
+            <p class="font-color">{{galeria.descripcion}}</p>
+            <hr class="bg-color">
             <form>
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
-                        <label for="validationServer01">Nombre</label>
+                        <label class="font-color" for="validationServer01">Nombre</label>
                         <input type="text" class="form-control " id="validationServer01" placeholder="Ingrese su Nombre" value="">
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="validationServer02">Apellido</label>
+                        <label class="font-color" for="validationServer02">Apellido</label>
                         <input type="text" class="form-control " id="validationServer02" placeholder="Ingrese su Apellido" value="">
                         <div class="valid-feedback">
                             Looks good!
@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-3 mb-3">
-                        <label for="validationServer05">Número de teléfono</label>
+                        <label class="font-color" for="validationServer05">Número de teléfono</label>
                         <input type="text" class="form-control " id="validationServer05" placeholder="Ingrese Teléfono">
                         <div class="invalid-feedback">
                             Please provide a valid zip.
@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <button type="button" (click)="verMensaje(mensajeLLamado)" class="btn btn-outline-success">Solicitar llamado</button>
+                <button type="button" (click)="verMensaje(mensajeLLamado)" class="btn  btn-color">Solicitar llamado</button>
             </form>
         </div>
 
@@ -47,8 +47,7 @@
 </div>
 <ng-template #mensajeLLamado>
     <div class="modal-header">
-        <h4 class="modal-title">A la brevedad nos contactaremos con usted</h4>
-
+        <h4 class="modal-dialog">Lo contactaremos a la brevedad</h4>
     </div>
     <div class="modal-footer">
 
