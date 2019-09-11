@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+
 // Servicios
 import { GaleriaService } from './services/galeria.service';
 
@@ -57,7 +60,9 @@ import { QuieroServicioComponent } from './components/quiero-servicio/quiero-ser
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTING
+    APP_ROUTING,
+    NgbModule
+
   ],
   providers: [
     GaleriaService

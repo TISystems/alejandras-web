@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GaleriaService } from '../../services/galeria.service';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @Component({
@@ -12,7 +14,7 @@ export class QuieroServicioComponent {
 
   galeria: any = {};
 
-  constructor(private activatedRoute: ActivatedRoute, private galeriaService: GaleriaService) {
+  constructor(private activatedRoute: ActivatedRoute, private galeriaService: GaleriaService, private modalService: NgbModal ) {
 
     this.activatedRoute.params.subscribe(params => {
 
@@ -21,5 +23,11 @@ export class QuieroServicioComponent {
 
     });
    }
+
+   verMensaje(modal) {
+
+    this.modalService.open(modal);
+
+}
 
 }

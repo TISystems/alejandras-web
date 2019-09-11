@@ -39,9 +39,19 @@
                     </div>
                 </div>
 
-                <button class="btn btn-outline-success" type="submit">Solicitar llamado</button>
+                <button type="button" (click)="verMensaje(mensajeLLamado)" class="btn btn-outline-success">Solicitar llamado</button>
             </form>
         </div>
 
     </div>
 </div>
+<ng-template #mensajeLLamado>
+    <div class="modal-header">
+        <h4 class="modal-title">A la brevedad nos contactaremos con usted</h4>
+
+    </div>
+    <div class="modal-footer">
+
+    </div>
+
+</ng-template>

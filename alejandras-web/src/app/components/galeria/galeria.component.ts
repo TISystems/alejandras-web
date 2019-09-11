@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 
 
 
+
 @Component({
   selector: 'app-galeria',
   templateUrl: './galeria.component.html',
@@ -24,5 +25,6 @@ export class GaleriaComponent implements OnInit {
 
 
   }
+
 
 }
