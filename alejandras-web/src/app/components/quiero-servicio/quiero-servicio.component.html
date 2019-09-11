@@ -40,17 +40,18 @@
                 </div>
 
                 <button type="button" (click)="verMensaje(mensajeLLamado)" class="btn  btn-color">Solicitar llamado</button>
+
             </form>
         </div>
 
     </div>
 </div>
-<ng-template #mensajeLLamado>
-    <div class="modal-header">
-        <h4 class="modal-dialog">Lo contactaremos a la brevedad</h4>
+<ng-template #mensajeLLamado let-modal="dismiss">
+    <div class="text-sm-center p-center">
+        <img class="img-w" src="assets/img/comprobado.png"><br><br><br>
+        <span class="modal-dialog font-color">Un Profesional de <b>ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
+        <button [routerLink]="['/home']" class="btn  btn-color" (click)="modal('Close')">Salir</button>
     </div>
-    <div class="modal-footer">
 
-    </div>
 
 </ng-template>
