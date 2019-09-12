@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GaleriaService } from '../../services/galeria.service';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { NgForm } from '@angular/forms';
 
 
 
@@ -28,6 +29,10 @@ export class QuieroServicioComponent {
 
     this.modalService.open(modal);
 
+}
+guardar(forma: NgForm) {
+
+  console.log(forma)
 }
 
 }

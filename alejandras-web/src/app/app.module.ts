@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
+
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -34,6 +36,7 @@ import { QuieroServicioComponent } from './components/quiero-servicio/quiero-ser
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,6 +64,7 @@ import { QuieroServicioComponent } from './components/quiero-servicio/quiero-ser
     BrowserModule,
     AppRoutingModule,
     APP_ROUTING,
+    FormsModule,
     NgbModule
 
   ],
