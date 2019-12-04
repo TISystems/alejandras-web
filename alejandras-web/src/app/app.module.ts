@@ -7,6 +7,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // Servicios
 import { GaleriaService } from './services/galeria.service';
+import { ManicureService } from './services/manicure.service';
 
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +33,7 @@ import { ReservasComponent } from './components/reservas/reservas.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
 import { QuieroServicioComponent } from './components/quiero-servicio/quiero-servicio.component';
+import { QuieroManicureComponent } from './components/quiero-manicure/quiero-manicure.component';
 
 
 
@@ -58,7 +60,8 @@ import { QuieroServicioComponent } from './components/quiero-servicio/quiero-ser
     ReservasComponent,
     GaleriaComponent,
     EquipoComponent,
-    QuieroServicioComponent
+    QuieroServicioComponent,
+    QuieroManicureComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ import { QuieroServicioComponent } from './components/quiero-servicio/quiero-ser
 
   ],
   providers: [
-    GaleriaService
+    GaleriaService,
+    ManicureService
   ],
   bootstrap: [AppComponent]
 })
