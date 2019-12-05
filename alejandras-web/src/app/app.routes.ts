@@ -16,6 +16,8 @@ import { PestaniasComponent } from './components/servicios/pestanias/pestanias.c
 import { TratamientoCapilarComponent } from './components/servicios/tratamiento-capilar/tratamiento-capilar.component';
 import { QuieroServicioComponent } from './components/quiero-servicio/quiero-servicio.component';
 import { QuieroManicureComponent } from './components/quiero-manicure/quiero-manicure.component';
+import { QuieroPestaniasComponent} from './components/quiero-pestanias/quiero-pestanias.component';
+import { QuieroDepilacionComponent} from './components/quiero-depilacion/quiero-depilacion.component';
 
 
 
@@ -37,6 +39,8 @@ const APP_ROUTES: Routes = [
   {path: 'tratamiento-capilar' , component: TratamientoCapilarComponent},
   {path: 'quiero-servicio/:id' , component: QuieroServicioComponent},
   {path: 'quiero-manicure/:id' , component: QuieroManicureComponent},
+  {path: 'quiero-pestanias/:id' , component: QuieroPestaniasComponent},
+  {path: 'quiero-depilacion/:id' , component: QuieroDepilacionComponent},
   {path: '**' , pathMatch: 'full', redirectTo: 'home'}
 ];
 export  const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);

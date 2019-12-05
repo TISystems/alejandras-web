@@ -34,6 +34,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
 import { QuieroServicioComponent } from './components/quiero-servicio/quiero-servicio.component';
 import { QuieroManicureComponent } from './components/quiero-manicure/quiero-manicure.component';
+import { QuieroPestaniasComponent } from './components/quiero-pestanias/quiero-pestanias.component';
+import { QuieroDepilacionComponent } from './components/quiero-depilacion/quiero-depilacion.component';
 
 
 
@@ -61,7 +63,9 @@ import { QuieroManicureComponent } from './components/quiero-manicure/quiero-man
     GaleriaComponent,
     EquipoComponent,
     QuieroServicioComponent,
-    QuieroManicureComponent
+    QuieroManicureComponent,
+    QuieroPestaniasComponent,
+    QuieroDepilacionComponent
   ],
   imports: [
     BrowserModule,
