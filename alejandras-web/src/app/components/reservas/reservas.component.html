@@ -1,3 +1,51 @@
-<p>
-  reservas works!
-</p>
+<!-- <div class="container">
+    <h1 _ngcontent-xic-c5="" class="font-color">Reservar hora de atención</h1>
+    <hr>
+
+    <div class="row">
+
+        <div class="col-sm-12">
+
+            <div class="starter-template">
+                <form>
+                    <div class="form-group">
+                        <label class="font-color">Nombres y Apellidos</label>
+                        <input [formControl]="nameFormControl" class="form-control" />
+                        <div class="font-color" *ngIf="nameFormControl.hasError('minLength')">
+                            Ingrese mínimo 4 caracteres
+                        </div>
+                        <div class="font-color" *ngIf="nameFormControl.hasError('required')">
+                            *requerido
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-color">Email</label>
+                        <input [formControl]="emailFormControl" class="form-control" />
+                        <div class="font-color" *ngIf="emailFormControl.hasError('email')">
+                            Por favor ingrese un correo válido
+                        </div>
+                        <div class="font-color" *ngIf="emailFormControl.hasError('required')">
+                            *requerido
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="font-color">Asunto</label>
+                        <input [formControl]="asuntoFormControl" class="form-control" />
+                        <div class="font-color" *ngIf="asuntoFormControl.hasError('minLength')">
+                            Ingrese mínimo 4 caracteres
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <button [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading" class="btn btn-color" color="primary" (click)="register()">Contactar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+-->

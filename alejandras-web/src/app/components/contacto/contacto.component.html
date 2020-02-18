@@ -34,14 +34,24 @@
                         </div>
 
                     </div>
-
-                    <!---    <div class="form-group">
+                    <div class="form-group">
                         <label class="font-color">Asunto</label>
-                        <input type="text" formControlName="asunto" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.asunto.errors }" />
-                        <div *ngIf="submitted && f.asunto.errors" class="invalid-feedback">
-                            <div *ngIf="f.asunto.errors.required">Por favor, ingresa el Asunto</div>
+                        <input [formControl]="asuntoFormControl" class="form-control" />
+                        <div class="font-color" *ngIf="asuntoFormControl.hasError('minLength')">
+                            Ingrese mínimo 4 caracteres
                         </div>
+
                     </div>
+                    <div class="form-group">
+                        <label class="font-color">Mensaje</label>
+                        <textarea [formControl]="mensajeFormControl" class="form-control" rows="3"></textarea>
+                        <div class="font-color" *ngIf="mensajeFormControl.hasError('minLength')">
+                            Ingrese mínimo 4 caracteres
+                        </div>
+
+                    </div>
+
+                    <!---
                     <div class="form-group">
                         <label for="mensaje" class="font-color">Mensaje</label>
                         <textarea class="form-control" formControlName="mensaje" rows="3" [ngClass]="{ 'is-invalid': submitted && f.mensaje.errors }"></textarea>
@@ -50,7 +60,7 @@
                         </div>
                     </div> -->
                     <div class="form-group">
-                        <button [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading" class="btn btn-color" color="primary" (click)="register()">Contactar</button>
+                        <button (click)="verMensaje(mensajeLLamado)" type="button" [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading" class="btn btn-color" color="primary" (click)="register()">Contactar</button>
                     </div>
 
                 </form>
@@ -58,3 +68,13 @@
         </div>
     </div>
 </div>
+
+<ng-template #mensajeLLamado let-modal="dismiss ">
+    <div class="text-sm-center p-center ">
+        <img class="img-w " src="assets/img/iconos/comprobado.png "><br><br><br>
+        <span class="modal-dialog font-color ">Un Profesional de <b>ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
+        <button [routerLink]="[ '/home'] " class="btn btn-color " (click)="modal( 'Close') ">Salir</button>
+    </div>
+
+
+</ng-template>

@@ -73,7 +73,7 @@
             </ul>
             <ul class="navbar-nav mr-5">
                 <li class="nav-item active mr-sm-5 hoverli">
-                    <button type="button" class="btn btn-outline-light " [routerLink]="['reservas']">Reserva Hora</button>
+                    <button (click)="verMensaje(reservaHora)" type="button" class="btn btn-outline-light ">Reserva Hora</button>
                 </li>
 
             </ul>
@@ -82,3 +82,78 @@
         </div>
     </nav>
 </div>
+
+
+<ng-template #mensajeLLamado let-modal="dismiss ">
+    <div class="text-sm-center p-center ">
+        <img class="img-w " src="assets/img/iconos/comprobado.png "><br><br><br>
+        <span class="modal-dialog font-color ">Un Profesional de <b>ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
+        <button [routerLink]="[ '/home'] " class="btn btn-color " (click)="modal( 'Close') ">Salir</button>
+    </div>
+</ng-template>
+<ng-template #reservaHora let-modal="dismiss ">
+    <div class="text-sm-center p-center ">
+
+        <div class="container">
+            <img src="assets/img/iconos/logo.jpg" width="50">
+            <h1 _ngcontent-xic-c5="" class="font-color">Reserva tu Hora</h1>
+            <hr>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <div class="starter-template">
+                        <form>
+                            <div class="form-group">
+                                <label class="font-color">Nombres y Apellidos</label>
+                                <input [formControl]="nameFormControl" class="form-control" />
+                                <div class="font-color" *ngIf="nameFormControl.hasError('minLength')">
+                                    Ingrese mínimo 4 caracteres
+                                </div>
+                                <div class="font-color" *ngIf="nameFormControl.hasError('required')">
+                                    *requerido
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-color">Telèfono</label>
+                                <input [formControl]="telefonoFormControl" class="form-control" />
+                                <div class="font-color" *ngIf="telefonoFormControl.hasError('email')">
+                                    Por favor ingrese un correo válido
+                                </div>
+                                <div class="font-color" *ngIf="telefonoFormControl.hasError('required')">
+                                    *requerido
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="font-color">Servicios Profesionales</label>
+                                <select class="form-control" [formControl]="servicioFormControl">
+                                  <option value="">Seleccionar</option>
+                                  <option value="PESTAÑAS">Pestañas</option>
+                                <option value="DEPILACIÓN">Depilación</option>
+                                  <option value="MANICURE Y PEDICURE">Manicure y Pedicure</option>
+                                <option value="BROW BAR">Brow Bar</option>
+                                  <option value="COLORACIÓN">Coloración</option>
+                                  <option value="TRATAMIENTOS CAPILARES">Tratamientos Capilares</option>
+                                  <option value="PEINADOS">Peinados</option>
+                                  <option value="CORTE DE CABELLO">Corte de Cabello</option>
+                                </select>
+                                <div>
+                                    <div *ngIf="servicioFormControl.hasError('required')">Por favor, Selecciona un servicio</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button (click)="modal( 'Close') " (click)="verMensaje(mensajeLLamado)" type="button" [disabled]="telefonoFormControl.invalid || nameFormControl.invalid || servicioFormControl.invalid || loading" class="btn btn-color" color="primary" (click)="register()">Reservar</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</ng-template>

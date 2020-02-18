@@ -16,7 +16,7 @@ export class HttpService {
     return this.http.post(url, { name: "Subrat" });
   }
 
-  sendEmail(url, data) {
+  sendMailContacto(url, data) {
     return this.http.post(url, data);
   }
 }
