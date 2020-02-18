@@ -1,4 +1,60 @@
 <div class="container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1751858015546!2d-70.65440524905301!3d-33.44474210451138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a748416b37%3A0xfec44beeefd0265c!2sAv%20Libertador%20Bernardo%20O&#39;Higgins%201146%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1568313365888!5m2!1ses-419!2scl"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <h1 _ngcontent-xic-c5="" class="font-color">Contacto</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1751858015546!2d-70.65440524905301!3d-33.44474210451138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a748416b37%3A0xfec44beeefd0265c!2sAv%20Libertador%20Bernardo%20O&#39;Higgins%201146%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1568313365888!5m2!1ses-419!2scl"
+                width="550" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+            <h4 _ngcontent-xic-c5="" class="font-color">Ubícanos en nuestra dirección</h4>
+        </div>
+        <div class="col-sm-6">
+            <h4 _ngcontent-xic-c5="" class="font-color">Envíanos tu Sugerencia</h4>
+            <hr>
+            <div class="starter-template">
+                <form>
+                    <div class="form-group">
+                        <label class="font-color">Nombres y Apellidos</label>
+                        <input [formControl]="nameFormControl" class="form-control" />
+                        <div class="font-color" *ngIf="nameFormControl.hasError('minLength')">
+                            Ingrese mínimo 4 caracteres
+                        </div>
+                        <div class="font-color" *ngIf="nameFormControl.hasError('required')">
+                            *requerido
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-color">Email</label>
+                        <input [formControl]="emailFormControl" class="form-control" />
+                        <div class="font-color" *ngIf="emailFormControl.hasError('email')">
+                            Por favor ingrese un correo válido
+                        </div>
+                        <div class="font-color" *ngIf="emailFormControl.hasError('required')">
+                            *requerido
+                        </div>
+
+                    </div>
+
+                    <!---    <div class="form-group">
+                        <label class="font-color">Asunto</label>
+                        <input type="text" formControlName="asunto" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.asunto.errors }" />
+                        <div *ngIf="submitted && f.asunto.errors" class="invalid-feedback">
+                            <div *ngIf="f.asunto.errors.required">Por favor, ingresa el Asunto</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje" class="font-color">Mensaje</label>
+                        <textarea class="form-control" formControlName="mensaje" rows="3" [ngClass]="{ 'is-invalid': submitted && f.mensaje.errors }"></textarea>
+                        <div *ngIf="submitted && f.mensaje.errors" class="invalid-feedback">
+                            <div *ngIf="f.mensaje.errors.required">Por favor, ingresa el Mensaje ( 6 Caracteres mínimo )</div>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <button [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading" class="btn btn-color" color="primary" (click)="register()">Contactar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -36,6 +37,9 @@ import { QuieroServicioComponent } from './components/quiero-servicio/quiero-ser
 import { QuieroManicureComponent } from './components/quiero-manicure/quiero-manicure.component';
 import { QuieroPestaniasComponent } from './components/quiero-pestanias/quiero-pestanias.component';
 import { QuieroDepilacionComponent } from './components/quiero-depilacion/quiero-depilacion.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 
@@ -72,7 +76,9 @@ import { QuieroDepilacionComponent } from './components/quiero-depilacion/quiero
     AppRoutingModule,
     APP_ROUTING,
     FormsModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [

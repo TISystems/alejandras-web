@@ -18,7 +18,7 @@
                     <div class="col-md-4 mb-3 ">
                         <label class="font-color" for="validationTooltip01">Nombre</label>
                         <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre">
-                        <div *ngIf="nombre.errors?.required">
+                        <div mat-error *ngIf="nombre.errors?.required">
                             <label class="font-color">* requerido</label>
                         </div>
                         <div *ngIf="nombre.errors?.minlength">

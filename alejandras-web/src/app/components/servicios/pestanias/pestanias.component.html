@@ -1,18 +1,55 @@
 <div class="container">
     <h1 class="font-color"><small>Pestañas&nbsp;</small>Profesionales</h1>
     <hr>
+    <h3 class="font-color"><small>Ondulación&nbsp;</small></h3>
+    <p class="card-text font-color">Consiste en aplicar una serie de productos (gel permanente, gel neutralizante, tinte) encargados de modificar la forma natural de las pestañas dejándolas onduladas de 6 a 8 semanas aproximadamente.</p>
     <div class="card-columns">
 
         <div class="card animated fadeIn fast" *ngFor="let galeria of galerias; let i = index ">
             <img [src]="galeria.img" class="card-img-top img-manicure" [alt]="galeria.nombre">
             <div class="card-body">
-                <h5 class="card-title font-color">{{galeria.nombre}}</h5>
-                <p class="card-text font-color">{{galeria.descripcion}}</p>
+
                 <button (click)="verHeroe(i)" type="button" [routerLink]="['/reservas']" class="btn  btn-block btn-color">¡ Lo Quiero.. !</button>
             </div>
         </div>
 
 
 
+
     </div>
+    <hr>
+    <h3 class="font-color"><small>Lifting&nbsp;</small></h3>
+    <p class="card-text font-color">Es un procedimiento que trata la pestaña desde la raíz. Este tratamiento permite alisar, erguir y estirar las pestañas sutilmente creando un efecto visible de proyección y longitud.</p>
+    <div class="card-columns">
+
+        <div class="card animated fadeIn fast" *ngFor="let galeria of galerias; let i = index ">
+            <img [src]="galeria.img" class="card-img-top img-manicure" [alt]="galeria.nombre">
+            <div class="card-body">
+                <button (click)="verHeroe(i)" type="button" [routerLink]="['/reservas']" class="btn  btn-block btn-color">¡ Lo Quiero.. !</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <hr>
+    <h3 class="font-color"><small>Extensión&nbsp;</small></h3>
+    <p class="card-text font-color">aporta a la longitud, curvatura, cantidad y grosor de pestañas naturales.</p>
+    <div class="card-columns">
+
+        <div class="card animated fadeIn fast" *ngFor="let galeria of galerias; let i = index ">
+            <img [src]="galeria.img" class="card-img-top img-manicure" [alt]="galeria.nombre">
+            <div class="card-body">
+
+
+                <button (click)="verHeroe(i)" type="button" [routerLink]="['/reservas']" class="btn  btn-block btn-color">¡ Lo Quiero.. !</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
 </div>
