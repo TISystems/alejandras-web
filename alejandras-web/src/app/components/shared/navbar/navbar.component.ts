@@ -16,15 +16,7 @@ export class NavbarComponent implements OnInit {
   buttionText = "Submit";
   correo="virpeza91@gmail.com";
 
-  telefonoFormControl = new FormControl("", [
-    Validators.required,
-    Validators.minLength(9)
-  ]);
 
-  nameFormControl = new FormControl("", [
-    Validators.required,
-    Validators.minLength(4)
-  ]);
   servicioFormControl = new FormControl("", [
     Validators.required
   ]);
@@ -37,12 +29,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
 
     }
-    register() {
+    register(forma: NgForm) {
       this.loading = true;
       this.buttionText = "Submiting...";
       let user = {
-        name: this.nameFormControl.value,
-        telefono: this.telefonoFormControl.value,
+        name: forma.value.nombre,
+        telefono: forma.value.telefono,
         servicio: this.servicioFormControl.value,
         email: this.correo
       }

@@ -1,15 +1,15 @@
 .btn-color {
-    color: #3D1058;
-    border: 1.5px solid #3D1058;
+    color: rgb(250, 246, 252);
+    border: 1.5px solid rgb(250, 248, 252);
 }
 
 button:hover {
-    background-color: #3D1058;
-    color: white;
+    background-color: rgb(250, 247, 252);
+    color: rgb(14, 12, 12);
 }
 
-.font-color {
-    color: #3D1058;
+.font-colors {
+    color: rgb(251, 250, 252);
 }
 
 .font-color {

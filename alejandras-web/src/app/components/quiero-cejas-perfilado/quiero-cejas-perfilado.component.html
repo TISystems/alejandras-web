@@ -2,23 +2,23 @@
 
     <div class=" form-group row">
         <div class="col-md-4 ">
-            <img style="height: 250px !important;" [src]="manicure.img" [alt]="manicure.nombre" class="img-fluid zoom">
+            <img style="height: 250px !important;" [src]="galeriaServiceCejasPerfilados.img" [alt]="galeriaServiceCejasPerfilados.nombre" class="img-fluid zoom">
             <br><br>
-            <button [routerLink]="['/manicure-pedicure']" class="btn  btn-block btn-color">Regresar a Manicure-Pedicure</button>
+            <button [routerLink]="['/cejas']" class="btn  btn-block btn-color">Regresar a Galería</button>
 
         </div>
         <div class="col-md-8">
-            <h3 class="font-color">{{manicure.nombre}}</h3>
+            <h3 class="font-color">{{galeriaServiceCejasPerfilados.nombre}}</h3>
             <hr class="bg-color">
-            <p class="font-color">{{manicure.descripcion}}</p>
+            <p class="font-color">{{galeriaServiceCejasPerfilados.descripcion}}</p>
             <hr class="bg-color">
 
-            <form #forma="ngForm" novalidate="">
+            <form (ngSubmit)=guardar(forma) #forma="ngForm" novalidate="">
                 <div class="form-group row ">
                     <div class="col-md-4 mb-3 ">
                         <label class="font-color" for="validationTooltip01">Nombre</label>
                         <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre">
-                        <div mat-error *ngIf="nombre.errors?.required">
+                        <div *ngIf="nombre.errors?.required">
                             <label class="font-color">* requerido</label>
                         </div>
                         <div *ngIf="nombre.errors?.minlength">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <button (click)="register(forma)" (click)="verMensaje(mensajeLLamado)" [disabled]="!forma.valid " type="button " class="btn btn-color ">Solicitar llamado</button>
+                <button [disabled]="!forma.valid" type="submit" class="btn  btn-color" (click)="verMensaje(mensajeLLamado)">Solicitar llamado</button>
 
 
 
@@ -59,11 +59,11 @@
 
     </div>
 </div>
-<ng-template #mensajeLLamado let-modal="dismiss ">
-    <div class="text-sm-center p-center ">
-        <img class="img-w " src="assets/img/iconos/comprobado.png "><br><br><br>
-        <span class="modal-dialog font-color ">Un Profesional de <b>ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
-        <button [routerLink]="[ '/home'] " class="btn btn-color " (click)="modal( 'Close') ">Salir</button>
+<ng-template #mensajeLLamado let-modal="dismiss">
+    <div class="text-sm-center p-center">
+        <img class="img-w" src="assets/img/comprobado.png"><br><br><br>
+        <span class="modal-dialog font-color">Un Profesional de <b>ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
+        <button [routerLink]="['/home']" class="btn  btn-color" (click)="modal('Close')">Salir</button>
     </div>
 
 

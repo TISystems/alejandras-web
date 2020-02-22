@@ -27,39 +27,79 @@
                             <span class="text-item">Pestañas</span>
                             <span class="down-item"></span>
                         </a>
+                        <a class="dropdown-item font-color" [routerLink]="['cejas']">
+                            <span class="imagen"><img src="assets/img/navbar/cejas.JPG" ></span>
+                            <span class="text-item">Cejas</span>
+                            <span class="down-item"></span>
+                        </a>
+                        <a class="dropdown-item font-color" [routerLink]="['pestanias']">
+                            <span class="imagen"><img src="assets/img/navbar/micropigmentacion.JPG" ></span>
+                            <span class="text-item">Micropigmentación</span>
+                            <span class="down-item"></span>
+                        </a>
                         <a class="dropdown-item font-color" [routerLink]="['depilacion']">
                             <span class="imagen"><img src="assets/img/navbar/depilacion.jpg" ></span>
-                            <span class="text-item">Depilación</span>
+                            <span class="text-item">Depilación Cera Tradicional</span>
                             <span class="down-item"></span>
                         </a>
                         <a class="dropdown-item font-color" [routerLink]="['manicure-pedicure']">
                             <span class="imagen"><img src="assets/img/navbar/manicurePedicure.jpg" ></span>
-                            <span class="text-item">Manicure y Pedicure</span>
+                            <span class="text-item">Manicure/Pedicure</span>
                             <span class="down-item"></span>
                         </a>
                         <a class="dropdown-item font-color" [routerLink]="['browbar']">
-                            <span class="imagen"><img src="assets/img/navbar/browbar.jpg" ></span>
-                            <span class="text-item">Brow Bar</span>
+                            <span class="imagen"><img src="assets/img/navbar/alisado.jpg" ></span>
+                            <span class="text-item">Alisado</span>
                             <span class="down-item"></span>
                         </a>
                         <a class="dropdown-item font-color" [routerLink]="['coloracion']">
                             <span class="imagen"><img src="assets/img/navbar/coloracion.jpg" ></span>
-                            <span class="text-item">Coloración</span>
+                            <span class="text-item">Color</span>
+                            <span class="down-item"></span>
+                        </a>
+                        <a class="dropdown-item font-color" [routerLink]="['coloracion']">
+                            <span class="imagen"><img src="assets/img/navbar/botox.jpg" ></span>
+                            <span class="text-item">Botox</span>
+                            <span class="down-item"></span>
+                        </a>
+                        <a class="dropdown-item font-color" [routerLink]="['coloracion']">
+                            <span class="imagen"><img src="assets/img/navbar/lavado.jpg" ></span>
+                            <span class="text-item">Lavado</span>
+                            <span class="down-item"></span>
+                        </a>
+                        <a class="dropdown-item font-color" [routerLink]="['coloracion']">
+                            <span class="imagen"><img src="assets/img/navbar/brushing.jpg" ></span>
+                            <span class="text-item">Brushing</span>
                             <span class="down-item"></span>
                         </a>
                         <a class="dropdown-item font-color" [routerLink]="['tratamiento-capilar']">
-                            <span class="imagen"><img src="assets/img/navbar/tratamientoCapilar.jpg" ></span>
-                            <span class="text-item">Tratamientos Capilares</span>
+                            <span class="imagen"><img src="assets/img/navbar/masaje-capilar.jpg" ></span>
+                            <span class="text-item">Masaje Capilar</span>
                             <span class="down-item"></span>
                         </a>
                         <a class="dropdown-item font-color" [routerLink]="['peinados']">
-                            <span class="imagen"><img src="assets/img/navbar/peinados.jpg" ></span>
-                            <span class="text-item">Peinados</span>
+                            <span class="imagen"><img src="assets/img/navbar/peinado.jpg" ></span>
+                            <span class="text-item">Peinado</span>
+                            <span class="down-item"></span>
+                        </a>
+                        <a class="dropdown-item font-color" [routerLink]="['coloracion']">
+                            <span class="imagen"><img src="assets/img/navbar/maquillaje.png" ></span>
+                            <span class="text-item">Maquillaje</span>
                             <span class="down-item"></span>
                         </a>
                         <a class="dropdown-item font-color" [routerLink]="['corte-cabello']">
                             <span class="imagen"><img src="assets/img/navbar/corteCabello.jpg" ></span>
                             <span class="text-item">Cortes de Cabello</span>
+                            <span class="down-item"></span>
+                        </a>
+                        <a class="dropdown-item font-color" [routerLink]="['pestanias']">
+                            <span class="imagen"><img src="assets/img/navbar/pestania.jpg" ></span>
+                            <span class="text-item">Tratamiento Facial</span>
+                            <span class="down-item"></span>
+                        </a>
+                        <a class="dropdown-item font-color" [routerLink]="['pestanias']">
+                            <span class="imagen"><img src="assets/img/navbar/pestania.jpg" ></span>
+                            <span class="text-item">Tratamiento Corporal</span>
                             <span class="down-item"></span>
                         </a>
                     </div>
@@ -87,49 +127,58 @@
 <ng-template #mensajeLLamado let-modal="dismiss ">
     <div class="text-sm-center p-center ">
         <img class="img-w " src="assets/img/iconos/comprobado.png "><br><br><br>
-        <span class="modal-dialog font-color ">Un Profesional de <b>ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
+        <span class="modal-dialog font-color ">Un Profesional de <b> SALÓN ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
         <button [routerLink]="[ '/home'] " class="btn btn-color " (click)="modal( 'Close') ">Salir</button>
     </div>
 </ng-template>
-<ng-template #reservaHora let-modal="dismiss ">
+<ng-template #reservaHora let-modal="dismiss" let-c="close">
+    <div class="modal-header">
+        <button type="button" class="close" (click)="c('')">x</button>
+    </div>
     <div class="text-sm-center p-center ">
 
         <div class="container">
             <img src="assets/img/iconos/logo.jpg" width="50">
             <h1 _ngcontent-xic-c5="" class="font-color">Reserva tu Hora</h1>
             <hr>
-
-            <div class="row">
-
-                <div class="col-sm-12">
-                    <div class="starter-template">
-                        <form>
-                            <div class="form-group">
-                                <label class="font-color">Nombres y Apellidos</label>
-                                <input [formControl]="nameFormControl" class="form-control" />
-                                <div class="font-color" *ngIf="nameFormControl.hasError('minLength')">
-                                    Ingrese mínimo 4 caracteres
+            <div class="col-sm-12">
+                <div class="starter-template">
+                    <form #forma="ngForm" novalidate="">
+                        <div class="form-group row ">
+                            <div class="col-md-12 mb-3 ">
+                                <label class="font-color" for="validationTooltip01">Nombre</label>
+                                <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre y Apellidos">
+                                <div mat-error *ngIf="nombre.errors?.required">
+                                    <label class="font-color">* requerido</label>
                                 </div>
-                                <div class="font-color" *ngIf="nameFormControl.hasError('required')">
-                                    *requerido
+                                <div *ngIf="nombre.errors?.minlength">
+                                    <label class="font-color">Ingrese mínimo {{nombre.errors.minlength.requiredLength}} caracteres</label>
+
+                                </div>
+                                <div *ngIf="nombre.errors?.pattern">
+                                    <label class="font-color">Ingrese solo letras</label>
+
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label class="font-color">Telèfono</label>
-                                <input [formControl]="telefonoFormControl" class="form-control" />
-                                <div class="font-color" *ngIf="telefonoFormControl.hasError('email')">
-                                    Por favor ingrese un correo válido
+                            <div class="col-md-12 mb-3">
+                                <label class="font-color">Número de teléfono</label>
+                                <input #telefono="ngModel" minlength="9" maxlength="9" pattern="^\d*$" required name="telefono" ngModel type="text" class="form-control " placeholder="Ingrese Teléfono">
+                                <div *ngIf="telefono.errors?.required">
+                                    <label class="font-color">* requerido</label>
                                 </div>
-                                <div class="font-color" *ngIf="telefonoFormControl.hasError('required')">
-                                    *requerido
+                                <div *ngIf="telefono.errors?.minlength">
+                                    <label class="font-color">* Ingrese teléfono válido</label>
                                 </div>
 
+                                <div *ngIf="telefono.errors?.pattern">
+                                    <label class="font-color">Ingrese solo números</label>
+
+                                </div>
                             </div>
-
-
-                            <div class="form-group">
-                                <label class="font-color">Servicios Profesionales</label>
-                                <select class="form-control" [formControl]="servicioFormControl">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-color">Servicios Profesionales</label>
+                            <select class="form-control" [formControl]="servicioFormControl">
                                   <option value="">Seleccionar</option>
                                   <option value="PESTAÑAS">Pestañas</option>
                                 <option value="DEPILACIÓN">Depilación</option>
@@ -140,18 +189,18 @@
                                   <option value="PEINADOS">Peinados</option>
                                   <option value="CORTE DE CABELLO">Corte de Cabello</option>
                                 </select>
-                                <div>
-                                    <div *ngIf="servicioFormControl.hasError('required')">Por favor, Selecciona un servicio</div>
-                                </div>
+                            <div>
+                                <div class="font-color" *ngIf="servicioFormControl.hasError('required')">Por favor, Selecciona un servicio</div>
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <button (click)="modal( 'Close') " (click)="verMensaje(mensajeLLamado)" type="button" [disabled]="telefonoFormControl.invalid || nameFormControl.invalid || servicioFormControl.invalid || loading" class="btn btn-color" color="primary" (click)="register()">Reservar</button>
-                            </div>
+                        <div class="form-group">
+                            <button (click)="modal( 'Close') " (click)="verMensaje(mensajeLLamado)" type="button" [disabled]="!forma.valid || servicioFormControl.invalid || loading" class="btn btn-color" color="primary" (click)="register(forma)">Reservar</button>
+                        </div>
 
-                        </form>
-                    </div>
+                    </form>
                 </div>
+
             </div>
         </div>
 

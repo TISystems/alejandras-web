@@ -4,65 +4,69 @@
 
     <div class="row">
         <div class="col-sm-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1751858015546!2d-70.65440524905301!3d-33.44474210451138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a748416b37%3A0xfec44beeefd0265c!2sAv%20Libertador%20Bernardo%20O&#39;Higgins%201146%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1568313365888!5m2!1ses-419!2scl"
-                width="550" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                width="550" height="580" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
             <h4 _ngcontent-xic-c5="" class="font-color">Ubícanos en nuestra dirección</h4>
         </div>
-        <div class="col-sm-6">
-            <h4 _ngcontent-xic-c5="" class="font-color">Envíanos tu Sugerencia</h4>
+        <div style="
+background-color: #7b1c8a;" class="col-sm-6">
+            <h4 _ngcontent-xic-c5="" class="font-colors">Envíanos tu Sugerencia</h4>
             <hr>
             <div class="starter-template">
-                <form>
-                    <div class="form-group">
-                        <label class="font-color">Nombres y Apellidos</label>
-                        <input [formControl]="nameFormControl" class="form-control" />
-                        <div class="font-color" *ngIf="nameFormControl.hasError('minLength')">
-                            Ingrese mínimo 4 caracteres
+                <form #forma="ngForm" novalidate="">
+                    <div class="form-group row ">
+                        <div class="col-md-12 mb-3 ">
+                            <label class="font-colors" for="validationTooltip01">Nombre y Apellidos</label>
+                            <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre y Apellidos">
+                            <div mat-error *ngIf="nombre.errors?.required">
+                                <label class="font-colors">* requerido</label>
+                            </div>
+                            <div *ngIf="nombre.errors?.minlength">
+                                <label class="font-colors">Ingrese mínimo {{nombre.errors.minlength.requiredLength}} caracteres</label>
+
+                            </div>
+                            <div *ngIf="nombre.errors?.pattern">
+                                <label class="font-colors">Ingrese solo letras</label>
+
+                            </div>
                         </div>
-                        <div class="font-color" *ngIf="nameFormControl.hasError('required')">
-                            *requerido
+                        <div class="col-md-12 mb-3 ">
+                            <label class="font-colors">Email</label>
+                            <input [formControl]="emailFormControl" class="form-control" />
+                            <div class="font-colors" *ngIf="emailFormControl.hasError('email')">
+                                Por favor ingrese un correo válido
+                            </div>
+                            <div class="font-colors" *ngIf="emailFormControl.hasError('required')">
+                                *requerido
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3 ">
+                            <label class="font-colors" for="validationTooltip01">Asunto</label>
+                            <input #asunto="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="asunto" ngModel type="text" class="form-control " placeholder="Ingrese Asunto">
+                            <div *ngIf="asunto.errors?.required">
+                                <label class="font-colors">* requerido</label>
+                            </div>
+                            <div *ngIf="asunto.errors?.minlength">
+                                <label class="font-colors">Ingrese mínimo {{nombre.errors.minlength.requiredLength}} caracteres</label>
+
+                            </div>
+                            <div *ngIf="asunto.errors?.pattern">
+                                <label class="font-colors">Ingrese solo letras</label>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3 ">
+                            <label class="font-colors" for="validationTooltip01">Mensaje</label>
+                            <textarea #mensaje="ngModel" minlength="10" class="form-control" rows="3" name="mensaje" ngModel placeholder="Ingrese su mensaje Aquí"></textarea>
+                            <div *ngIf="mensaje.errors?.minlength">
+                                <label class="font-colors">Ingrese mínimo {{mensaje.errors.minlength.requiredLength}} caracteres</label>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3 ">
+                            <button class="font-colors" (click)="verMensaje(mensajeLLamado)" type="button" [disabled]="emailFormControl.invalid || !forma.valid || loading" class="btn btn-color " (click)="register(forma)">Contactar</button>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="font-color">Email</label>
-                        <input [formControl]="emailFormControl" class="form-control" />
-                        <div class="font-color" *ngIf="emailFormControl.hasError('email')">
-                            Por favor ingrese un correo válido
-                        </div>
-                        <div class="font-color" *ngIf="emailFormControl.hasError('required')">
-                            *requerido
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <label class="font-color">Asunto</label>
-                        <input [formControl]="asuntoFormControl" class="form-control" />
-                        <div class="font-color" *ngIf="asuntoFormControl.hasError('minLength')">
-                            Ingrese mínimo 4 caracteres
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <label class="font-color">Mensaje</label>
-                        <textarea [formControl]="mensajeFormControl" class="form-control" rows="3"></textarea>
-                        <div class="font-color" *ngIf="mensajeFormControl.hasError('minLength')">
-                            Ingrese mínimo 4 caracteres
-                        </div>
-
-                    </div>
-
-                    <!---
-                    <div class="form-group">
-                        <label for="mensaje" class="font-color">Mensaje</label>
-                        <textarea class="form-control" formControlName="mensaje" rows="3" [ngClass]="{ 'is-invalid': submitted && f.mensaje.errors }"></textarea>
-                        <div *ngIf="submitted && f.mensaje.errors" class="invalid-feedback">
-                            <div *ngIf="f.mensaje.errors.required">Por favor, ingresa el Mensaje ( 6 Caracteres mínimo )</div>
-                        </div>
-                    </div> -->
-                    <div class="form-group">
-                        <button (click)="verMensaje(mensajeLLamado)" type="button" [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading" class="btn btn-color" color="primary" (click)="register()">Contactar</button>
-                    </div>
-
                 </form>
             </div>
         </div>
@@ -75,6 +79,4 @@
         <span class="modal-dialog font-color ">Un Profesional de <b>ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
         <button [routerLink]="[ '/home'] " class="btn btn-color " (click)="modal( 'Close') ">Salir</button>
     </div>
-
-
 </ng-template>

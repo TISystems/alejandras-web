@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 class="font-color"><small>Cejas&nbsp;</small>Profesionales</h1>
+    <hr>
+    <h3 class="font-color"><small>Perfilado de Cejas&nbsp;</small></h3>
+    <p class="card-text font-color">El perfilado consiste en la técnica correcta de dar forma a tus cejas, dependiendo de la morfología de tus ojos y rostro, lo que nos proporcionara una correcta guía para definir el arco, el largo y el espesor de estas.</p>
+    <div class="card-columns">
+
+        <div class="card animated fadeIn fast" *ngFor="let galeria of galeriasCejasPerfilado; let i = index ">
+            <img [src]="galeria.img" class="card-img-top img-manicure" [alt]="galeria.nombre">
+            <div class="card-body">
+
+                <button (click)="verCejasPerfilado(i)" type="button" [routerLink]="['/reservas']" class="btn  btn-block btn-color">¡ Lo Quiero.. !</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <hr>
+    <h3 class="font-color"><small>Planchado de Cejas&nbsp;</small></h3>
+    <p class="card-text font-color">El planchado de cejas consiste en aplicar una crema alisadora que ayuda a que sea más fácil moldear las cejas, lo que este producto hace es estirar el vello para poder darle la forma deseada.</p>
+    <div class="card-columns">
+
+        <div class="card animated fadeIn fast" *ngFor="let galeria of galeriasCejasPlanchado; let i = index ">
+            <img [src]="galeria.img" class="card-img-top img-manicure" [alt]="galeria.nombre">
+            <div class="card-body">
+                <button (click)="verCejasPlanchado(i)" type="button" [routerLink]="['/reservas']" class="btn  btn-block btn-color">¡ Lo Quiero.. !</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>

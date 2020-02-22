@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { PestaniaService } from '../../../services/pestania.service';
+import { PestaniaOndulacionService } from '../../../services/pestania.ondulacion.service';
+import { PestaniaExtensionService } from '../../../services/pestania.extension.service';
+import { PestaniaLiftingService } from '../../../services/pestania.lifting.service';
 import { InterfacePestania } from '../../../interface/interfacePestania';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-pestanias',
@@ -10,16 +13,25 @@ import { Router } from '@angular/router';
 })
 export class PestaniasComponent {
 
-  galerias: InterfacePestania[] = [];
-  constructor(private galeriaService: PestaniaService, private router: Router) { }
+  galeriasOndulacion: InterfacePestania[] = [];
+  galeriasExtension: InterfacePestania[] = [];
+  galeriasLifting: InterfacePestania[] = [];
+  constructor(private galeriaServiceOndulacion: PestaniaOndulacionService, private galeriaServiceExtension: PestaniaExtensionService,
+              private router: Router, private galeriaServiceLifting: PestaniaLiftingService) { }
 
   ngOnInit() {
-    this.galerias = this.galeriaService.getPestanias();
+    this.galeriasOndulacion = this.galeriaServiceOndulacion.getPestanias();
+    this.galeriasExtension = this.galeriaServiceExtension.getPestanias();
+    this.galeriasLifting = this.galeriaServiceLifting.getPestanias();
   }
-  verHeroe(idx: number) {
-  this.router.navigate(['/quiero-pestanias', idx]);
-
-
+  verPestaniasOndulacion(idx: number) {
+  this.router.navigate(['/quiero-pestanias-ondulacion', idx]);
   }
+  verPestaniasExtension(idx: number) {
+    this.router.navigate(['/quiero-pestanias-extension', idx]);
+    }
+    verPestaniasLifting(idx: number) {
+      this.router.navigate(['/quiero-pestanias-lifting', idx]);
+      }
 
 }

@@ -20,18 +20,7 @@ export class ContactoComponent implements OnInit {
     Validators.email
   ]);
 
-  nameFormControl = new FormControl("", [
-    Validators.required,
-    Validators.minLength(4)
-  ]);
-  asuntoFormControl = new FormControl("", [
-    Validators.required,
-    Validators.minLength(4)
-  ]);
-  mensajeFormControl = new FormControl("", [
-    Validators.required,
-    Validators.minLength(4)
-  ]);
+
 
 
 
@@ -41,14 +30,14 @@ export class ContactoComponent implements OnInit {
   ngOnInit() {
 
     }
-    register() {
+    register(forma: NgForm) {
       this.loading = true;
       this.buttionText = "Submiting...";
       let user = {
-        name: this.nameFormControl.value,
+        name: forma.value.nombre,
         email: this.emailFormControl.value,
-        asunto: this.asuntoFormControl.value,
-        mensaje: this.mensajeFormControl.value
+        asunto: forma.value.asunto,
+        mensaje: forma.value.mensaje,
       }
       this.http.sendMailContacto("http://localhost:3000/sendmailcontacto", user).subscribe(
         data => {

@@ -35,9 +35,14 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
 import { QuieroServicioComponent } from './components/quiero-servicio/quiero-servicio.component';
 import { QuieroManicureComponent } from './components/quiero-manicure/quiero-manicure.component';
-import { QuieroPestaniasComponent } from './components/quiero-pestanias/quiero-pestanias.component';
+import { QuieroPestaniasOndulacionComponent } from './components/quiero-pestanias-Ondulacion/quiero-pestanias-Ondulacion.component';
 import { QuieroDepilacionComponent } from './components/quiero-depilacion/quiero-depilacion.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { QuieroPestaniasExtensionesComponent } from './components/quiero-pestanias-extensiones/quiero-pestanias-extensiones.component';
+import { QuieroPestaniasLiftingComponent } from './components/quiero-pestanias-lifting/quiero-pestanias-lifting.component';
+import { CejasComponent } from './components/servicios/cejas/cejas.component';
+import { QuieroCejasPerfiladoComponent } from './components/quiero-cejas-perfilado/quiero-cejas-perfilado.component';
+import { QuieroCejasPlanchadoComponent } from './components/quiero-cejas-planchado/quiero-cejas-planchado.component';
 
 
 
@@ -68,8 +73,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     EquipoComponent,
     QuieroServicioComponent,
     QuieroManicureComponent,
-    QuieroPestaniasComponent,
-    QuieroDepilacionComponent
+    QuieroPestaniasOndulacionComponent,
+    QuieroDepilacionComponent,
+    QuieroPestaniasExtensionesComponent,
+    QuieroPestaniasLiftingComponent,
+    CejasComponent,
+    QuieroCejasPerfiladoComponent,
+    QuieroCejasPlanchadoComponent,
+
   ],
   imports: [
     BrowserModule,
