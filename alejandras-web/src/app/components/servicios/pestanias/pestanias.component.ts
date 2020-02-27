@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PestaniaOndulacionService } from '../../../services/pestania.ondulacion.service';
+import { PestaniaService } from '../../../services/pestania.service';
 import { InterfacePestania } from '../../../interface/interfacePestania';
 import { Router } from '@angular/router';
 
@@ -11,14 +11,13 @@ import { Router } from '@angular/router';
 })
 export class PestaniasComponent {
 
-  galeriasOndulacion: InterfacePestania[] = [];
-  galeriasExtension: InterfacePestania[] = [];
-  galeriasLifting: InterfacePestania[] = [];
-  constructor(private galeriaServiceOndulacion: PestaniaOndulacionService,
+  galeriasPestanias: InterfacePestania[] = [];
+
+  constructor(private galeriaServiceOndulacion: PestaniaService,
               private router: Router) { }
 
   ngOnInit() {
-    this.galeriasOndulacion = this.galeriaServiceOndulacion.getPestanias();
+    this.galeriasPestanias = this.galeriaServiceOndulacion.getPestanias();
   }
   verPestaniasOndulacion(idx: number) {
   this.router.navigate(['/quiero-pestanias-ondulacion', idx]);

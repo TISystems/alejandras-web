@@ -16,7 +16,7 @@ export class MicropigmentacionComponent  {
               private router: Router) { }
 
   ngOnInit() {
-    this.galeriasmicropigmentacion = this.micropigmentacionService.getPestanias();
+    this.galeriasmicropigmentacion = this.micropigmentacionService.getMicropigmentaciones();
   }
   verMicropigmentacion(idx: number) {
   this.router.navigate(['/quiero-micropigmentacion', idx]);

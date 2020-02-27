@@ -4,9 +4,9 @@ import { InterfacePestania} from '../interface/interfacePestania';
 @Injectable({
   providedIn: 'root'
 })
-export class CejasPlanchadoService {
+export class CejasService {
 
-  cejasPerfilado: InterfacePestania[] = [
+  cejas: InterfacePestania[] = [
     {
       nombre: "Planchado de Cejas",
       descripcion: "El planchado de cejas consiste en aplicar una crema alisadora que ayuda a que sea más fácil moldear las cejas, lo que este producto hace es estirar el vello para poder darle la forma deseada.",
@@ -26,12 +26,12 @@ export class CejasPlanchadoService {
 
   }
 
-  getPestanias(){
+  getCejas(){
 
-    return this.cejasPerfilado;
+    return this.cejas;
   }
-  getPestania(idx: number){
+  getCeja(idx: number){
 
-    return this.cejasPerfilado[idx];
+    return this.cejas[idx];
   }
 }

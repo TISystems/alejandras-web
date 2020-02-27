@@ -1,86 +1,60 @@
 import {Injectable} from '@angular/core';
-import { InterfaceManicure } from '../interface/interfaceManicure';
+import { InterfacePestania } from '../interface/interfacePestania';
 
 
 @Injectable()
 export class ManicureService {
 
-   manicure: InterfaceManicure[] = [
+   manicure: InterfacePestania[] = [
     {
-      nombre: "Manicure1",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      img: "assets/img/servicios/Manicures/Manicure1.jpg",
+      nombre: "Tradicional",
+      descripcion: "Consiste en el embellecimiento, limpieza y cuidado de la mano para su perfecto esmaltado.",
+      img: "assets/img/servicios/Manicure-pedicure/Tradicional/tradicional1.jpg",
     },
     {
-      nombre: "Manicure2",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Manicures/Manicure2.jpg",
+      nombre: "Permanente",
+      descripcion: "Consiste en el embellecimiento, limpieza y cuidado de la mano para su perfecto esmaltado permanente.",
+      img: "assets/img/servicios/Manicure-pedicure/Permanente/hg.jpg",
     },
     {
-      nombre: "Manicure3",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Manicures/Manicure3.jpg",
+      nombre: "Acrílicos",
+      descripcion: "Son extensiones que se hacen a nuestra uña natural, para lograr el largo y la forma deseada.",
+      img: "assets/img/servicios/Manicure-pedicure/Acrilicos/kjh.jpg",
     },
     {
-      nombre: "Manicure4",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Manicures/Manicure4.jpg",
+      nombre: "Kapping",
+      descripcion: "Recubrimiento con gel o acrílico que permite que las uñas quebradizas, débiles o escamadas adquieran firmeza y volumen por 3 semanas aproximadamente.",
+      img: "assets/img/servicios/Manicure-pedicure/Kapping/kapping.png",
     },
     {
-      nombre: "Manicure5",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Manicures/Manicure5.jpg",
-
+      nombre: "Permanete con Diseño(mano alzada)",
+      descripcion: "Embellecimiento de la uña con dibujo personalizado, tiene una duración de 2 a 4 semanas aproximadamente.",
+      img: "assets/img/servicios/Manicure-pedicure/Permanente-con-disenio/mjkjhhkj.jpg",
     },
     {
-      nombre: "Manicure6",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Manicures/Manicure6.png",
+      nombre: "Permanente con Efecto",
+      descripcion: "Embellecimiento de la uña con variedad de pigmentos, tiene una duración de 2 a 4 semanas aproximadamente.",
+      img: "assets/img/servicios/Manicure-pedicure/Permanente-con-efecto/bkb.jpg",
     },
   {
-    nombre: "Manicure7",
+    nombre: "Permanente con Aplicación de Cristales",
     descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Manicures/Manicure7.JPEG",
+    img: "assets/img/servicios/Manicure-pedicure/Permanente-con-aplicacion-de-cristales/cristales.jpeg",
   },
   {
-    nombre: "Pedicure1",
-    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Pedicures/Pedicure1.jpeg",
+    nombre: "Stamping",
+    descripcion: "Es un método con el que podemos decorar nuestras uñas mediante un estampador con diseños increíbles de una manera sencilla y rápida.",
+    img: "assets/img/servicios/Manicure-pedicure/Stamping/lkhl.jpg",
   },
   {
-    nombre: "Pedicure2",
-    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Pedicures/Pedicure2.jpeg",
+    nombre: "Degradé",
+    descripcion: "Consiste en el embellecimiento, limpieza y cuidado de la mano para su perfecto esmaltado permanente.",
+    img: "assets/img/servicios/Manicure-pedicure/Degrade/jku.jpg",
   },
   {
-    nombre: "Pedicure3",
-    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Pedicures/Pedicure3.jpeg",
-  },
-  {
-    nombre: "Pedicure4",
-    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Pedicures/Pedicure4.jpeg",
-  },
-  {
-    nombre: "Pedicure5",
-    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Pedicures/Pedicure5.jpeg",
-  },
-  {
-    nombre: "Pedicure6",
-    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Pedicures/Pedicure6.jpeg",
-  },
-  {
-    nombre: "Pedicure7",
-    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Pedicures/Pedicure7.jpeg",
-  },
-  {
-    nombre: "Manicure16",
-    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Manicures/Manicure16.jpeg",
+    nombre: "Rusa",
+    descripcion: "Técnica que se realiza con un torno dejando la zona de la cutícula y la piel alrededor de la uña perfectamente lisa, esto permite realizar el esmaltado “bajo cutícula” o muy cerca a la cutícula.",
+    img: "assets/img/servicios/Manicure-pedicure/Rusa/manicura-rusa.jpg",
   }
 
 

@@ -4,7 +4,7 @@ import { InterfacePestania} from '../interface/interfacePestania';
 @Injectable({
   providedIn: 'root'
 })
-export class PestaniaOndulacionService {
+export class PestaniaService {
 
   Pestania: InterfacePestania[] = [
     {

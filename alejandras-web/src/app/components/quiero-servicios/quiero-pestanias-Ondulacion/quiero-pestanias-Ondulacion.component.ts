@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PestaniaOndulacionService } from '../../../services/pestania.ondulacion.service';
+import { PestaniaService } from '../../../services/pestania.service';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from '@angular/forms';
 
@@ -13,7 +13,7 @@ export class QuieroPestaniasOndulacionComponent  {
 
   galeriaOndulacion: any = {};
 
-  constructor(private activatedRoute: ActivatedRoute, private galeriaServiceOndulacion: PestaniaOndulacionService,
+  constructor(private activatedRoute: ActivatedRoute, private galeriaServiceOndulacion: PestaniaService,
               private modalService: NgbModal ) {
 
     this.activatedRoute.params.subscribe(params => {

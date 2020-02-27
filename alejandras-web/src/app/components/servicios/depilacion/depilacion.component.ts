@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DepilacionService } from '../../../services/depilacion.service';
-import { InterfaceDepilacion } from '../../../interface/interfaceDepilacion';
+import { InterfacePestania } from '../../../interface/interfacePestania';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class DepilacionComponent {
 
-  galerias: InterfaceDepilacion[] = [];
+  galerias: InterfacePestania[] = [];
   constructor(private galeriaService: DepilacionService, private router: Router) { }
 
   ngOnInit() {

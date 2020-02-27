@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CejasPlanchadoService } from '../../../services/cejas-planchado.service';
+import { CejasService } from '../../../services/cejas.service';
 import { InterfacePestania } from '../../../interface/interfacePestania';
 import { Router } from '@angular/router';
 
@@ -10,13 +10,13 @@ import { Router } from '@angular/router';
 })
 export class CejasComponent  {
 
-  galeriasCejasPlanchado: InterfacePestania[] = [];
+  galeriasCejas: InterfacePestania[] = [];
   constructor(
               private router: Router,
-              private galeriaServiceCejasPlanchado: CejasPlanchadoService) { }
+              private galeriaServiceCejasPlanchado: CejasService) { }
 
   ngOnInit() {
-    this.galeriasCejasPlanchado = this.galeriaServiceCejasPlanchado.getPestanias();
+    this.galeriasCejas = this.galeriaServiceCejasPlanchado.getCejas();
   }
 
 

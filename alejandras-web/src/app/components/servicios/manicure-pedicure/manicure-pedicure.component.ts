@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ManicureService } from '../../../services/manicure.service';
-import { InterfaceManicure } from '../../../interface/interfaceManicure';
+import { InterfacePestania } from '../../../interface/interfacePestania';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ManicurePedicureComponent implements OnInit {
 
-  manicures: InterfaceManicure[] = [];
+  manicures: InterfacePestania[] = [];
   constructor(private manicureService: ManicureService, private router: Router) { }
 
   ngOnInit() {

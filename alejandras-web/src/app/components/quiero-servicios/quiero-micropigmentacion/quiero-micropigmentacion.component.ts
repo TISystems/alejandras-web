@@ -18,7 +18,7 @@ export class QuieroMicropigmentacionComponent  {
 
     this.activatedRoute.params.subscribe(params => {
 
-      this.galeriaMicropigmentacion = this.galeriamicropigmentacion.getPestania(params['id']);
+      this.galeriaMicropigmentacion = this.galeriamicropigmentacion.getMicropigmentacion(params['id']);
 
     });
    }

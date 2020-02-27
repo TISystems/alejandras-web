@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { InterfaceGaleria } from '../../../interface/interfaceGaleria';
 import { Router } from '@angular/router';
 
 @Component({

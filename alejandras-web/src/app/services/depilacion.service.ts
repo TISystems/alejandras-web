@@ -1,72 +1,102 @@
 import {Injectable} from '@angular/core';
-import { InterfaceDepilacion} from '../interface/interfaceDepilacion';
+import { InterfacePestania} from '../interface/interfacePestania';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DepilacionService {
 
-  Depilacion: InterfaceDepilacion[] = [
+  Depilacion: InterfacePestania[] = [
     {
-      nombre: "Depilacion1",
+      nombre: "Axilas",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      img: "assets/img/servicios/Depilacion/Depilacion1.jpeg",
+      img: "",
     },
     {
-      nombre: "Depilacion2",
+      nombre: "Bozo",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Depilacion/Depilacion2.jpeg",
+      img: "",
     },
     {
-      nombre: "Depilacion3",
+      nombre: "Frente",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Depilacion/Depilacion3.jpeg",
+      img: "",
     },
     {
-      nombre: "Depilacion4",
+      nombre: "Cejas",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Depilacion/Depilacion4.jpeg",
+      img: "",
     },
     {
-      nombre: "Depilacion5",
+      nombre: "Nariz",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Depilacion/Depilacion5.jpeg",
+      img: "",
 
     },
     {
-      nombre: "Depilacion6",
+      nombre: "Patillas",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/Depilacion/Depilacion6.jpeg",
+      img: "",
     },
   {
-    nombre: "Depilacion7",
+    nombre: "Mentón",
     descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Depilacion/Depilacion7.jpeg",
+    img: "",
   },
   {
-    nombre: "Depilacion8",
+    nombre: "1/2 Brazo",
     descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Depilacion/Depilacion8.jpeg",
+    img: "",
   },
   {
-    nombre: "Depilacion9",
+    nombre: "Brazo Completo",
     descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Depilacion/Depilacion9.jpeg",
+    img: "",
   },
   {
-    nombre: "Depilacion10",
+    nombre: "1/2 Pierna",
     descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Depilacion/Depilacion10.jpeg",
+    img: "assets/img/servicios/depilacion-cera-tradicional/gluteos/srfg.jpg",
   },
   {
-    nombre: "Depilacion11",
+    nombre: "Pierna Completa",
     descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Depilacion/Depilacion11.jpeg",
+    img: "",
   },
   {
-    nombre: "Depilacion12",
+    nombre: "Espalda",
     descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "assets/img/servicios/Depilacion/Depilacion12.jpeg",
+    img: "",
+  },
+  {
+    nombre: "Abdomen",
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "",
+  },
+  {
+    nombre: "Glúteos",
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "assets/img/servicios/depilacion-cera-tradicional/media-pierna/d.jpg",
+  },
+  {
+    nombre: "Cara",
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "",
+  },
+  {
+    nombre: "Rebaje Corto",
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "",
+  },
+  {
+    nombre: "Rebaje Largo",
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "",
+  },
+  {
+    nombre: "Rebaje Completo",
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "",
   }
 
 
