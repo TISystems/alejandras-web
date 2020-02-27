@@ -5,3 +5,7 @@
 .bgcolor {
     background-color: white;
 }
+
+.img-w-h {
+    width: 100%;
+}

@@ -2,53 +2,55 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
-
-// Servicios
-import { GaleriaService } from './services/galeria.service';
-import { ManicureService } from './services/manicure.service';
-
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
 import { APP_ROUTING } from './app.routes';
-// componentes
+// components
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavSocialNetworksComponent } from './components/shared/nav-social-networks/nav-social-networks.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { PromocionesComponent } from './components/promociones/promociones.component';
+//components/servicios
 import { PestaniasComponent } from './components/servicios/pestanias/pestanias.component';
 import { DepilacionComponent } from './components/servicios/depilacion/depilacion.component';
 import { ManicurePedicureComponent } from './components/servicios/manicure-pedicure/manicure-pedicure.component';
-import { BrowbarComponent } from './components/servicios/browbar/browbar.component';
 import { ColoracionComponent } from './components/servicios/coloracion/coloracion.component';
-import { TratamientoCapilarComponent } from './components/servicios/tratamiento-capilar/tratamiento-capilar.component';
 import { PeinadosComponent } from './components/servicios/peinados/peinados.component';
 import { CorteCabelloComponent } from './components/servicios/corte-cabello/corte-cabello.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
-import { PromocionesComponent } from './components/promociones/promociones.component';
-import { ReservasComponent } from './components/reservas/reservas.component';
-import { GaleriaComponent } from './components/galeria/galeria.component';
-import { EquipoComponent } from './components/equipo/equipo.component';
-import { QuieroServicioComponent } from './components/quiero-servicio/quiero-servicio.component';
-import { QuieroManicureComponent } from './components/quiero-manicure/quiero-manicure.component';
-import { QuieroPestaniasOndulacionComponent } from './components/quiero-pestanias-Ondulacion/quiero-pestanias-Ondulacion.component';
-import { QuieroDepilacionComponent } from './components/quiero-depilacion/quiero-depilacion.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { QuieroPestaniasExtensionesComponent } from './components/quiero-pestanias-extensiones/quiero-pestanias-extensiones.component';
-import { QuieroPestaniasLiftingComponent } from './components/quiero-pestanias-lifting/quiero-pestanias-lifting.component';
 import { CejasComponent } from './components/servicios/cejas/cejas.component';
-import { QuieroCejasPerfiladoComponent } from './components/quiero-cejas-perfilado/quiero-cejas-perfilado.component';
-import { QuieroCejasPlanchadoComponent } from './components/quiero-cejas-planchado/quiero-cejas-planchado.component';
+import { MicropigmentacionComponent } from './components/servicios/micropigmentacion/micropigmentacion.component';
+import { TratamientoCorporalComponent } from './components/servicios/tratamiento-corporal/tratamiento-corporal.component';
+import { TratamientoFacialComponent } from './components/servicios/tratamiento-facial/tratamiento-facial.component';
+import { MaquillajeComponent } from './components/servicios/maquillaje/maquillaje.component';
+import { MasajeCapilarComponent } from './components/servicios/masaje-capilar/masaje-capilar.component';
+import { BrushingComponent } from './components/servicios/brushing/brushing.component';
+import { LavadoComponent } from './components/servicios/lavado/lavado.component';
+import { BotoxComponent } from './components/servicios/botox/botox.component';
+import { AlisadoComponent } from './components/servicios/alisado/alisado.component';
 
-
-
-
-
-
+//components/quiero-servicios
+import { QuieroManicureComponent } from './components/quiero-servicios/quiero-manicure/quiero-manicure.component';
+import { QuieroPestaniasOndulacionComponent } from './components/quiero-servicios/quiero-pestanias-Ondulacion/quiero-pestanias-Ondulacion.component';
+import { QuieroCejasPlanchadoComponent } from './components/quiero-servicios/quiero-cejas-planchado/quiero-cejas-planchado.component';
+import { QuieroMicropigmentacionComponent } from './components/quiero-servicios/quiero-micropigmentacion/quiero-micropigmentacion.component';
+import { QuieroColorComponent } from './components/quiero-servicios/quiero-color/quiero-color.component';
+import { QuieroDepilacionCeraTradicionalComponent } from './components/quiero-servicios/quiero-depilacion-cera-tradicional/quiero-depilacion-cera-tradicional.component';
+import { QuieroAlisadoComponent } from './components/quiero-servicios/quiero-alisado/quiero-alisado.component';
+import { QuieroBotoxComponent } from './components/quiero-servicios/quiero-botox/quiero-botox.component';
+import { QuieroLavadoComponent } from './components/quiero-servicios/quiero-lavado/quiero-lavado.component';
+import { QuieroBrushingComponent } from './components/quiero-servicios/quiero-brushing/quiero-brushing.component';
+import { QuieroMasajeCapilarComponent } from './components/quiero-servicios/quiero-masaje-capilar/quiero-masaje-capilar.component';
+import { QuieroPeinadoComponent } from './components/quiero-servicios/quiero-peinado/quiero-peinado.component';
+import { QuieroMaquillajeComponent } from './components/quiero-servicios/quiero-maquillaje/quiero-maquillaje.component';
+import { QuieroCorteComponent } from './components/quiero-servicios/quiero-corte/quiero-corte.component';
+import { QuieroTratamientoFacialComponent } from './components/quiero-servicios/quiero-tratamiento-facial/quiero-tratamiento-facial.component';
+import { QuieroTratamientoCorporalComponent } from './components/quiero-servicios/quiero-tratamiento-corporal/quiero-tratamiento-corporal.component';
 
 @NgModule({
   declarations: [
@@ -61,25 +63,37 @@ import { QuieroCejasPlanchadoComponent } from './components/quiero-cejas-plancha
     PestaniasComponent,
     DepilacionComponent,
     ManicurePedicureComponent,
-    BrowbarComponent,
     ColoracionComponent,
-    TratamientoCapilarComponent,
     PeinadosComponent,
     CorteCabelloComponent,
     ContactoComponent,
     PromocionesComponent,
-    ReservasComponent,
-    GaleriaComponent,
-    EquipoComponent,
-    QuieroServicioComponent,
     QuieroManicureComponent,
     QuieroPestaniasOndulacionComponent,
-    QuieroDepilacionComponent,
-    QuieroPestaniasExtensionesComponent,
-    QuieroPestaniasLiftingComponent,
     CejasComponent,
-    QuieroCejasPerfiladoComponent,
     QuieroCejasPlanchadoComponent,
+    MicropigmentacionComponent,
+    QuieroMicropigmentacionComponent,
+    QuieroColorComponent,
+    QuieroDepilacionCeraTradicionalComponent,
+    QuieroAlisadoComponent,
+    QuieroBotoxComponent,
+    QuieroLavadoComponent,
+    QuieroBrushingComponent,
+    QuieroMasajeCapilarComponent,
+    QuieroPeinadoComponent,
+    QuieroMaquillajeComponent,
+    QuieroCorteComponent,
+    QuieroTratamientoFacialComponent,
+    QuieroTratamientoCorporalComponent,
+    TratamientoCorporalComponent,
+    TratamientoFacialComponent,
+    MaquillajeComponent,
+    MasajeCapilarComponent,
+    BrushingComponent,
+    LavadoComponent,
+    BotoxComponent,
+    AlisadoComponent,
 
   ],
   imports: [
@@ -93,8 +107,6 @@ import { QuieroCejasPlanchadoComponent } from './components/quiero-cejas-plancha
 
   ],
   providers: [
-    GaleriaService,
-    ManicureService
   ],
   bootstrap: [AppComponent]
 })

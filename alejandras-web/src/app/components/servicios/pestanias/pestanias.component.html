@@ -1,14 +1,15 @@
 <div class="container">
-    <h1 class="font-color"><small>Pestañas&nbsp;</small>Profesionales</h1>
-    <hr>
-    <h3 class="font-color"><small>Ondulación de Pestañas&nbsp;</small></h3>
-    <p class="card-text font-color">Consiste en aplicar una serie de productos (gel permanente, gel neutralizante, tinte) encargados de modificar la forma natural de las pestañas dejándolas onduladas de 6 a 8 semanas aproximadamente.</p>
-    <div class="card-columns">
+    <div>
+        <h1 class="font-color">Pestañas</h1>
+        <hr>
+    </div>
 
+    <div class="card-columns">
         <div class="card animated fadeIn fast" *ngFor="let galeria of galeriasOndulacion; let i = index ">
             <img [src]="galeria.img" class="card-img-top img-manicure" [alt]="galeria.nombre">
             <div class="card-body">
-
+                <h2 class="card-title font-color">{{galeria.nombre}}</h2>
+                <p class="card-text font-color">{{galeria.descripcion}}</p>
                 <button (click)="verPestaniasOndulacion(i)" type="button" [routerLink]="['/reservas']" class="btn  btn-block btn-color">¡ Lo Quiero.. !</button>
             </div>
         </div>
@@ -17,39 +18,6 @@
 
 
     </div>
-    <hr>
-    <h3 class="font-color"><small>Lifting de Pestañas&nbsp;</small></h3>
-    <p class="card-text font-color">Es un procedimiento que trata la pestaña desde la raíz. Este tratamiento permite alisar, erguir y estirar las pestañas sutilmente creando un efecto visible de proyección y longitud.</p>
-    <div class="card-columns">
 
-        <div class="card animated fadeIn fast" *ngFor="let galeria of galeriasLifting; let i = index ">
-            <img [src]="galeria.img" class="card-img-top img-manicure" [alt]="galeria.nombre">
-            <div class="card-body">
-                <button (click)="verPestaniasLifting(i)" type="button" [routerLink]="['/reservas']" class="btn  btn-block btn-color">¡ Lo Quiero.. !</button>
-            </div>
-        </div>
-
-
-
-
-    </div>
-    <hr>
-    <h3 class="font-color"><small>Extensión de Pestañas&nbsp;</small></h3>
-    <p class="card-text font-color">Aporta a la longitud, curvatura, cantidad y grosor de pestañas naturales.</p>
-    <div class="card-columns">
-
-        <div class="card animated fadeIn fast" *ngFor="let galeria of galeriasExtension; let i = index ">
-            <img [src]="galeria.img" class="card-img-top img-manicure" [alt]="galeria.nombre">
-            <div class="card-body">
-
-
-                <button (click)="verPestaniasExtension(i)" type="button" [routerLink]="['/reservas']" class="btn  btn-block btn-color">¡ Lo Quiero.. !</button>
-            </div>
-        </div>
-
-
-
-
-    </div>
 
 </div>
