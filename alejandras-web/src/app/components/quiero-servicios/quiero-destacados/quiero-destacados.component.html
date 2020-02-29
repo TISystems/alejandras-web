@@ -1,0 +1,70 @@
+<div class="container">
+
+    <div class=" form-group row">
+        <div class="col-md-4 ">
+            <img style="height: 300px !important;" [src]="galeriaDestacados.img" [alt]="galeriaDestacados.nombre" class="img-fluid zoom">
+            <br><br>
+            <button [routerLink]="['/home']" class="btn  btn-block btn-color">Regresar a Galería</button>
+
+        </div>
+        <div class="col-md-8">
+            <h3 class="font-color">{{galeriaDestacados.nombre}}</h3>
+            <hr class="bg-color">
+            <p class="font-color">{{galeriaDestacados.descripcion}}</p>
+            <hr class="bg-color">
+
+            <form (ngSubmit)=guardar(forma) #forma="ngForm" novalidate="">
+                <div class="form-group row ">
+                    <div class="col-md-4 mb-3 ">
+                        <label class="font-color" for="validationTooltip01">Nombre</label>
+                        <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre">
+                        <div *ngIf="nombre.errors?.required">
+                            <label class="font-color">* requerido</label>
+                        </div>
+                        <div *ngIf="nombre.errors?.minlength">
+                            <label class="font-color">Ingrese mínimo {{nombre.errors.minlength.requiredLength}} caracteres</label>
+
+                        </div>
+                        <div *ngIf="nombre.errors?.pattern">
+                            <label class="font-color">Ingrese solo letras</label>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <label class="font-color">Número de teléfono</label>
+                        <input #telefono="ngModel" minlength="9" maxlength="9" pattern="^\d*$" required name="telefono" ngModel type="text" class="form-control " placeholder="Ingrese Teléfono">
+                        <div *ngIf="telefono.errors?.required">
+                            <label class="font-color">* requerido</label>
+                        </div>
+                        <div *ngIf="telefono.errors?.minlength">
+                            <label class="font-color">* Ingrese teléfono válido</label>
+                        </div>
+
+                        <div *ngIf="telefono.errors?.pattern">
+                            <label class="font-color">Ingrese solo números</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <button [disabled]="!forma.valid" type="submit" class="btn  btn-color" (click)="verMensaje(mensajeLLamado)">Solicitar llamado</button>
+
+
+
+            </form>
+        </div>
+
+    </div>
+</div>
+<ng-template #mensajeLLamado let-modal="dismiss">
+    <div class="text-sm-center p-center">
+        <img class="img-w" src="assets/img/comprobado.png"><br><br><br>
+        <span class="modal-dialog font-color">Un Profesional de <b>ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
+        <button [routerLink]="['/home']" class="btn  btn-color" (click)="modal('Close')">Salir</button>
+    </div>
+
+
+</ng-template>

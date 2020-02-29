@@ -15,7 +15,7 @@ export class ColorService {
     {
       nombre: "Visos",
       descripcion: "Aporta matización y luminosidad al cabello.",
-      img: "assets/img/servicios/color/cambio-de-color/2.jpg",
+      img: "assets/img/servicios/color/Visos/2.jpg",
     },
     {
       nombre: "Mechas",
@@ -40,7 +40,7 @@ export class ColorService {
     {
       nombre: "BabyLight",
       descripcion: "Tono sobre tono en efecto transparencia.",
-      img: "assets/img/servicios/cejas/perfilado/IMG_8931.JPG",
+      img: "",
     },
     {
       nombre: "Reflejos",

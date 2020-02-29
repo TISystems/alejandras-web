@@ -6,6 +6,25 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
 import { APP_ROUTING } from './app.routes';
+// Services
+import { AlisadoService } from './services/alisado.service';
+import { BotoxService } from './services/botox.service';
+import { BrushingService } from './services/brushing.service';
+import { CejasService } from './services/cejas.service';
+import { ColorService } from './services/color.service';
+import { CorteService } from './services/corte.service';
+import { DepilacionService } from './services/depilacion.service';
+import { LavadoService } from './services/lavado.service';
+import { ManicureService } from './services/manicure.service';
+import { MaquillajeService } from './services/maquillaje.service';
+import { MasajeCapilarService } from './services/masaje-capilar.service';
+import { MicropigmentacionService } from './services/micropigmentacion.service';
+import { PeinadoService } from './services/peinado.service';
+import { PestaniaService } from './services/pestania.service';
+import { TratamientoCorporalService } from './services/tratamiento-corporal.service';
+import { TratamientoFacialService } from './services/tratamiento-facial.service';
+import {DestacadosService} from './services/destacados.service';
+
 // components
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -34,6 +53,7 @@ import { LavadoComponent } from './components/servicios/lavado/lavado.component'
 import { BotoxComponent } from './components/servicios/botox/botox.component';
 import { AlisadoComponent } from './components/servicios/alisado/alisado.component';
 
+
 //components/quiero-servicios
 import { QuieroManicureComponent } from './components/quiero-servicios/quiero-manicure/quiero-manicure.component';
 import { QuieroPestaniasOndulacionComponent } from './components/quiero-servicios/quiero-pestanias-Ondulacion/quiero-pestanias-Ondulacion.component';
@@ -51,6 +71,8 @@ import { QuieroMaquillajeComponent } from './components/quiero-servicios/quiero-
 import { QuieroCorteComponent } from './components/quiero-servicios/quiero-corte/quiero-corte.component';
 import { QuieroTratamientoFacialComponent } from './components/quiero-servicios/quiero-tratamiento-facial/quiero-tratamiento-facial.component';
 import { QuieroTratamientoCorporalComponent } from './components/quiero-servicios/quiero-tratamiento-corporal/quiero-tratamiento-corporal.component';
+import { QuieroDestacadosComponent } from './components/quiero-servicios/quiero-destacados/quiero-destacados.component';
+
 
 @NgModule({
   declarations: [
@@ -94,6 +116,7 @@ import { QuieroTratamientoCorporalComponent } from './components/quiero-servicio
     LavadoComponent,
     BotoxComponent,
     AlisadoComponent,
+    QuieroDestacadosComponent
 
   ],
   imports: [
@@ -107,6 +130,25 @@ import { QuieroTratamientoCorporalComponent } from './components/quiero-servicio
 
   ],
   providers: [
+    ManicureService,
+    AlisadoService,
+    BotoxService,
+    BrushingService,
+    CejasService,
+    ColorService,
+    CorteService,
+    DepilacionService,
+    LavadoService,
+    ManicureService,
+    MaquillajeService,
+    MasajeCapilarService,
+    MicropigmentacionService,
+    PeinadoService,
+    PestaniaService,
+    TratamientoCorporalService,
+    TratamientoFacialService,
+    DestacadosService
+
   ],
   bootstrap: [AppComponent]
 })

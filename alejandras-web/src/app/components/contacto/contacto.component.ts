@@ -19,12 +19,6 @@ export class ContactoComponent implements OnInit {
     Validators.required,
     Validators.email
   ]);
-
-
-
-
-
-
   constructor(private http: HttpService, private modalService: NgbModal) { }
 
   ngOnInit() {

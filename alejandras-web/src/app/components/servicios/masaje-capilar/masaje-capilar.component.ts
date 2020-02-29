@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MasajeCapilarService } from '../../../services/masaje-capilar.service';
+import { InterfacePestania } from '../../../interface/interfacePestania';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-masaje-capilar',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MasajeCapilarComponent implements OnInit {
 
-  constructor() { }
+  galeriasMasajeCapilar: InterfacePestania[] = [];
+
+  constructor(private masajeCapilarService: MasajeCapilarService,
+              private router: Router) { }
 
   ngOnInit() {
+    this.galeriasMasajeCapilar = this.masajeCapilarService.getMasajeCapilaress();
+  }
+  verMasajeCapilar(idx: number) {
+  this.router.navigate(['/quiero-masaje-capilar', idx]);
   }
 
 }

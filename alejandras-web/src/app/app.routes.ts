@@ -23,6 +23,7 @@ import { LavadoComponent } from './components/servicios/lavado/lavado.component'
 import { BotoxComponent } from './components/servicios/botox/botox.component';
 import { AlisadoComponent } from './components/servicios/alisado/alisado.component';
 
+
 //components/quiero-servicios
 import { QuieroManicureComponent } from './components/quiero-servicios/quiero-manicure/quiero-manicure.component';
 import { QuieroPestaniasOndulacionComponent } from './components/quiero-servicios/quiero-pestanias-Ondulacion/quiero-pestanias-Ondulacion.component';
@@ -40,6 +41,7 @@ import { QuieroMaquillajeComponent } from './components/quiero-servicios/quiero-
 import { QuieroCorteComponent } from './components/quiero-servicios/quiero-corte/quiero-corte.component';
 import { QuieroTratamientoFacialComponent } from './components/quiero-servicios/quiero-tratamiento-facial/quiero-tratamiento-facial.component';
 import { QuieroTratamientoCorporalComponent } from './components/quiero-servicios/quiero-tratamiento-corporal/quiero-tratamiento-corporal.component';
+import { QuieroDestacadosComponent } from './components/quiero-servicios/quiero-destacados/quiero-destacados.component';
 
 
 
@@ -66,6 +68,7 @@ const APP_ROUTES: Routes = [
   {path: 'botox' , component: BotoxComponent},
   {path: 'alisado' , component: AlisadoComponent},
   {path: 'micropigmentacion' , component: MicropigmentacionComponent},
+
   //components/quiero-servicios
   {path: 'quiero-manicure/:id' , component: QuieroManicureComponent},
   {path: 'quiero-pestanias-ondulacion/:id' , component: QuieroPestaniasOndulacionComponent},
@@ -79,10 +82,11 @@ const APP_ROUTES: Routes = [
   {path: 'quiero-brushing/:id' , component: QuieroBrushingComponent},
   {path: 'quiero-masaje-capilar/:id' , component: QuieroMasajeCapilarComponent},
   {path: 'quiero-peinado/:id' , component: QuieroPeinadoComponent},
-  {path: 'quiero-quiero-maquillaje/:id' , component:QuieroMaquillajeComponent},
+  {path: 'quiero-maquillaje/:id' , component:QuieroMaquillajeComponent},
   {path: 'quiero-corte/:id' , component: QuieroCorteComponent},
   {path: 'quiero-tratamiento-facial/:id' , component: QuieroTratamientoFacialComponent},
   {path: 'quiero-tratamiento-corporal/:id' , component: QuieroTratamientoCorporalComponent},
+  {path: 'quiero-destacado/:id' , component: QuieroDestacadosComponent},
   //default
   {path: '**' , pathMatch: 'full', redirectTo: 'home'}
 

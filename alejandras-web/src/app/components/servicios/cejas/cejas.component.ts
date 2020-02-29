@@ -13,10 +13,10 @@ export class CejasComponent  {
   galeriasCejas: InterfacePestania[] = [];
   constructor(
               private router: Router,
-              private galeriaServiceCejasPlanchado: CejasService) { }
+              private cejasService: CejasService) { }
 
   ngOnInit() {
-    this.galeriasCejas = this.galeriaServiceCejasPlanchado.getCejas();
+    this.galeriasCejas = this.cejasService.getCejas();
   }
 
 

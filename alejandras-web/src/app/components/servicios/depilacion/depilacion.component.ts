@@ -10,14 +10,14 @@ import { Router } from '@angular/router';
 })
 export class DepilacionComponent {
 
-  galerias: InterfacePestania[] = [];
-  constructor(private galeriaService: DepilacionService, private router: Router) { }
+  galeriasDepilacion: InterfacePestania[] = [];
+  constructor(private depilacionService: DepilacionService, private router: Router) { }
 
   ngOnInit() {
-    this.galerias = this.galeriaService.getDepilaciones();
+    this.galeriasDepilacion = this.depilacionService.getDepilaciones();
   }
-  verHeroe(idx: number) {
-  this.router.navigate(['/quiero-depilacion', idx]);
+  verDepilacion(idx: number) {
+  this.router.navigate(['/quiero-depilacion-cera-tradicional', idx]);
 
 
   }

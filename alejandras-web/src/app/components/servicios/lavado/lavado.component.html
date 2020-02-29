@@ -1,3 +1,20 @@
-<p>
-  lavado works!
-</p>
+<div class="container">
+    <h1 class="font-color">Lavado</h1>
+    <hr>
+    <div class="card-columns">
+        <div class="card animated fadeIn fast" *ngFor="let galeria of galeriasLavados; let i = index ">
+            <img [src]="galeria.img" class="card-img-top img-manicure" [alt]="galeria.nombre">
+            <div class="card-body">
+                <h2 class="card-title font-color">{{galeria.nombre}}</h2>
+                <p class="card-text font-color">{{galeria.descripcion}}</p>
+                <button (click)="verLavado(i)" type="button" [routerLink]="['/reservas']" class="btn  btn-block btn-color">¡ Lo Quiero.. !</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+</div>

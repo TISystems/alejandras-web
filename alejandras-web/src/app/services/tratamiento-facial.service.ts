@@ -31,11 +31,11 @@ export class TratamientoFacialService {
 
   }
 
-  getMaquillajess(){
+  getTratamientoFaciales(){
 
     return this.tratamientoFacial;
   }
-  getMaquillajes(idx: number){
+  getTratamientoFacial(idx: number){
 
     return this.tratamientoFacial[idx];
   }

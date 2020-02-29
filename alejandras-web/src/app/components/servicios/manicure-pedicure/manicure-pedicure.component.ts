@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ManicureService } from '../../../services/manicure.service';
+import { ManicureService } from '../../../services/manicure.service'
 import { InterfacePestania } from '../../../interface/interfacePestania';
 import { Router } from '@angular/router';
 
@@ -10,16 +10,16 @@ import { Router } from '@angular/router';
 })
 export class ManicurePedicureComponent implements OnInit {
 
-  manicures: InterfacePestania[] = [];
-  constructor(private manicureService: ManicureService, private router: Router) { }
+  galeriasManicure: InterfacePestania[] = [];
+
+  constructor(private manicureService: ManicureService,
+              private router: Router) { }
 
   ngOnInit() {
-    this.manicures = this.manicureService.getManicures();
+    this.galeriasManicure = this.manicureService.getManicures();
   }
   verManicure(idx: number) {
   this.router.navigate(['/quiero-manicure', idx]);
-
-
   }
 
 }

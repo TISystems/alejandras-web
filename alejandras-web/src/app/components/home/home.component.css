@@ -1,3 +1,21 @@
 .img-w-h {
     width: 100%;
 }
+
+.btn-color {
+    color: #3D1058;
+    border: 1.5px solid #3D1058;
+}
+
+button:hover {
+    background-color: #3D1058;
+    color: white;
+}
+
+.font-color {
+    color: #3D1058;
+}
+
+.img-manicure {
+    height: 250px;
+}

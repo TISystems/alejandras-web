@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PeinadoService } from '../../../services/peinado.service';
+import { InterfacePestania } from '../../../interface/interfacePestania';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +10,17 @@ import { Router } from '@angular/router';
 })
 export class PeinadosComponent  {
 
+  galeriasPeinadoService: InterfacePestania[] = [];
+
+  constructor(private peinadoService: PeinadoService,
+              private router: Router) { }
+
+  ngOnInit() {
+    this.galeriasPeinadoService = this.peinadoService.getPeinados();
+  }
+  verMicropigmentacion(idx: number) {
+  this.router.navigate(['/quiero-peinado', idx]);
+  }
 
 
 }

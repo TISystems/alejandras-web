@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from '@angular/forms';
 import { FormBuilder, FormGroup} from '@angular/forms';
@@ -10,7 +10,7 @@ import { FormControl, Validators } from "@angular/forms";
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent  {
 
   loading = false;
   buttionText = "Submit";
@@ -20,16 +20,9 @@ export class NavbarComponent implements OnInit {
   servicioFormControl = new FormControl("", [
     Validators.required
   ]);
-
-
-
-
   constructor(private http: HttpService, private modalService: NgbModal) { }
 
-  ngOnInit() {
-
-    }
-    register(forma: NgForm) {
+  register(forma: NgForm) {
       this.loading = true;
       this.buttionText = "Submiting...";
       let user = {

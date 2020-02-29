@@ -14,7 +14,7 @@ export class MasajeCapilarService {
     },
     {
       nombre: "Nutrición",
-      descripcion: "Mejora la elasticidad de la fibra capilar.",
+      descripcion: "Mejora la elasticidad de la fibra capilar de cabello.",
       img: "assets/img/servicios/masaje-capilar/nutricion/jhgk.jpg",
     },
     {
