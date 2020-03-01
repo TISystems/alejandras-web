@@ -33,7 +33,7 @@ export class DestacadosService {
       img: "assets/img/servicios/lavado/con-secado/secado1.jpg",
     },
     {
-      nombre: "Día",
+      nombre: "Peinado Día",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       img: "assets/img/servicios/peinados/Dia/dia.jpeg",
     }

@@ -8,12 +8,12 @@
 }
 
 .column1 {
-    max-width: 400px;
-    width: 13%;
+    max-width: 500px;
+    width: 100%;
 }
 
 .column1 h1 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .column1 p {
@@ -23,7 +23,7 @@
 }
 
 .column2 {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .column2 h1 {
@@ -48,7 +48,7 @@
 }
 
 .column3 {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .column3 h1 {
