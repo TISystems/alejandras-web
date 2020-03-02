@@ -18,7 +18,7 @@ export class PeinadosComponent  {
   ngOnInit() {
     this.galeriasPeinadoService = this.peinadoService.getPeinados();
   }
-  verMicropigmentacion(idx: number) {
+  verPeinados(idx: number) {
   this.router.navigate(['/quiero-peinado', idx]);
   }
 

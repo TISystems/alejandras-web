@@ -13,9 +13,9 @@ export class DestacadosService {
       img: "assets/img/servicios/botox/botox-1.jpg",
     },
     {
-      nombre: "Visos",
-      descripcion: "Se trata de un conjunto de técnicas para darle luz y brillo al cabello, permite resaltar aspectos interesantes del rostro.",
-      img: "assets/img/servicios/color/Visos/2.jpg",
+      nombre: "Tratamiento Corporal",
+      descripcion: "Tratamiento con aparato que produce ondas ultrasónicas de alta potencia, a nivel de la superficie externa de la piel.",
+      img: "assets/img/servicios/tratamiento-corporal/corporal.jpeg",
     },
     {
       nombre: "Planchado de Cejas",
@@ -25,7 +25,7 @@ export class DestacadosService {
     {
       nombre: "Maquillaje Noche",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/maquillaje/Noche/maquillaje-noche.png",
+      img: "assets/img/servicios/maquillaje/Noche/maquillaje-noche.jpeg",
     },
     {
       nombre: "Lavado con Secado",

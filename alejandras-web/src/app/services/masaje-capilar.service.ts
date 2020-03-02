@@ -20,7 +20,7 @@ export class MasajeCapilarService {
     {
       nombre: "Protección de Color",
       descripcion: "Hidrata y a su vez protege el color.",
-      img: "assets/img/servicios/masaje-capilar/protecion-color/color.jpg",
+      img: "assets/img/servicios/masaje-capilar/proteccion-color/color.jpg",
     }
     ,
     {

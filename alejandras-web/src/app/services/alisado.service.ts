@@ -9,7 +9,7 @@ export class AlisadoService {
   alisado: InterfacePestania[] = [
     {
       nombre: "Alisado Queratina",
-      descripcion: "Proteína que contribuye al endurecimiento de la capa superficial del cabello.",
+      descripcion: "Proteína que contribuye al endurecimiento de la capa superficial del cabello, nutre el cabello, lo reconstruye y a aporta brillo.",
       img: "assets/img/servicios/alisado/alisar-tu-pelo-de-forma-natural.jpg",
     },
     {
@@ -19,8 +19,8 @@ export class AlisadoService {
     },
     {
       nombre: "Alisado Inoa",
-      descripcion: "Indicado para aquellas personas que tienen el cabello rizado y/o encrespado y lo quiere suave, liso, con hidratación equilibrada y que se le proporciona una reparación profunda en las partes más débiles.",
-      img: "assets/img/servicios/alisadocapilar.jpg",
+      descripcion: "Indicado para aquellas personas que tienen el cabello rizado y/o encrespado y lo quiere suave, liso, con hidratación equilibrada.",
+      img: "assets/img/servicios/alisado/capilar.jpg",
     }
 
 

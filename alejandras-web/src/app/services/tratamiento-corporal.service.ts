@@ -8,9 +8,9 @@ export class TratamientoCorporalService {
 
   tratamientoCorporal: InterfacePestania[] = [
     {
-      nombre: "Reductivo con ultra cavitación",
+      nombre: "Reductivo con Ultra Cavitación",
       descripcion: "Tratamiento con aparato que produce ondas ultrasónicas de alta potencia, a nivel de la superficie externa de la piel generando cambios de presión en el líquido intersticial del tejido.",
-      img: "",
+      img: "assets/img/servicios/tratamiento-corporal/corporal.jpeg",
     }
 
 

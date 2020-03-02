@@ -15,7 +15,7 @@ export class LavadoService {
     {
       nombre: "Lavado con Acomodo",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/lavado/acomodo/acomodo.jpg",
+      img: "assets/img/servicios/lavado/con-acomodo/acomodo.jpg",
     }
 
 

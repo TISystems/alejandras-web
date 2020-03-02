@@ -52,7 +52,7 @@ const APP_ROUTES: Routes = [
   {path: 'contacto' , component: ContactoComponent},
   {path: 'promociones' , component: PromocionesComponent},
   //components/servicios
-  {path: 'coloracion' , component: ColoracionComponent},
+  {path: 'color' , component: ColoracionComponent},
   {path: 'corte-cabello' , component: CorteCabelloComponent},
   {path: 'depilacion' , component: DepilacionComponent},
   {path: 'manicure-pedicure' , component: ManicurePedicureComponent},

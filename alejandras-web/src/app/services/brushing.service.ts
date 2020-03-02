@@ -19,8 +19,8 @@ export class BrushingService {
     },
     {
       nombre: "Brushing con Onda",
-      descripcion: "Secado, pulido, ondas con plancha o cepillo.",
-      img: "assets/img/servicios/brushing/onda/iuhiuh.jpg",
+      descripcion: "Secado, pulido, ondas con plancha/cepillo.",
+      img: "assets/img/servicios/brushing/con-onda/iuhiuh.jpeg",
     }
 
 

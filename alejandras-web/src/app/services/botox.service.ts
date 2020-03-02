@@ -14,8 +14,8 @@ export class BotoxService {
     },
     {
       nombre: "Ionización",
-      descripcion: "tratamiento que repara las fibras capilares quebradas o dañadas, lo logra a través de un potente concentrado de principios activos.",
-      img: "assets/img/servicios/botox/botox-1.jpg",
+      descripcion: "Repara las fibras capilares quebradas o dañadas, lo logra a través de un potente concentrado de principios activos.",
+      img: "assets/img/servicios/botox/botox2.jpg",
     }
 
 
