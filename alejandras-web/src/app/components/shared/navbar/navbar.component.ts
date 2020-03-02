@@ -14,7 +14,7 @@ export class NavbarComponent  {
 
   loading = false;
   buttionText = "Submit";
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
 
   servicioFormControl = new FormControl("", [

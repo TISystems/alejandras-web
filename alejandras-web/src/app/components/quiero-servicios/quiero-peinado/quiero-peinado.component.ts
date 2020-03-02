@@ -16,7 +16,7 @@ export class QuieroPeinadoComponent  {
   loading = false;
   buttionText = "Submit";
   peinado: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private peinadoService: PeinadoService,
               private modalService: NgbModal, private http: HttpService ) {

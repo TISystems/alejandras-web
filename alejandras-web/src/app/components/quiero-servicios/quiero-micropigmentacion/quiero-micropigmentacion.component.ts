@@ -17,7 +17,7 @@ export class QuieroMicropigmentacionComponent  {
   loading = false;
   buttionText = "Submit";
   manicure: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private galeriamicropigmentacion: MicropigmentacionService,
               private modalService: NgbModal, private http: HttpService ) {

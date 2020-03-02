@@ -17,7 +17,7 @@ export class QuieroBotoxComponent  {
   loading = false;
   buttionText = "Submit";
   botox: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private botoxService: BotoxService,
               private modalService: NgbModal, private http: HttpService ) {

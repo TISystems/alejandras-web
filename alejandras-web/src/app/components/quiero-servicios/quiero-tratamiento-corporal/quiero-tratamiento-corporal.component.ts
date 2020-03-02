@@ -16,7 +16,7 @@ export class QuieroTratamientoCorporalComponent  {
   loading = false;
   buttionText = "Submit";
   tratamientoCorporal: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private tratamientoCorporalService: TratamientoCorporalService,
               private modalService: NgbModal, private http: HttpService ) {

@@ -16,7 +16,7 @@ export class QuieroCejasPlanchadoComponent  {
   loading = false;
   buttionText = "Submit";
   manicure: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private galeriaServiceCejasPlanchado: CejasService,
               private modalService: NgbModal, private http: HttpService ) {

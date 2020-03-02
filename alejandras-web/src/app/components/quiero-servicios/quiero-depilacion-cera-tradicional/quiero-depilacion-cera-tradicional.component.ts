@@ -17,7 +17,7 @@ export class QuieroDepilacionCeraTradicionalComponent  {
   loading = false;
   buttionText = "Submit";
   depilacion: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private depilacionService: DepilacionService,
               private modalService: NgbModal, private http: HttpService ) {

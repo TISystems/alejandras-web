@@ -17,7 +17,7 @@ export class QuieroColorComponent  {
   loading = false;
   buttionText = "Submit";
   color: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private colorService: ColorService,
     private modalService: NgbModal, private http: HttpService ) {

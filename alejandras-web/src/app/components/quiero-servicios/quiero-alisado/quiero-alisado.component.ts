@@ -17,7 +17,7 @@ export class QuieroAlisadoComponent  {
   loading = false;
   buttionText = "Submit";
   alisado: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private alisadoService: AlisadoService,
               private modalService: NgbModal, private http: HttpService ) {

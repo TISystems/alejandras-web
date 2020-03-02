@@ -16,7 +16,7 @@ export class QuieroManicureComponent  {
   loading = false;
   buttionText = "Submit";
   manicure: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private galeriaService: ManicureService,
               private modalService: NgbModal, private http: HttpService ) {

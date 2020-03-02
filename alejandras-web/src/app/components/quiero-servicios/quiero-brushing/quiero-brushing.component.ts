@@ -17,7 +17,7 @@ export class QuieroBrushingComponent  {
   loading = false;
   buttionText = "Submit";
   brushing: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private brushingService: BrushingService,
               private modalService: NgbModal, private http: HttpService ) {

@@ -16,7 +16,7 @@ export class QuieroTratamientoFacialComponent  {
   loading = false;
   buttionText = "Submit";
   tratamientoFacial: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private tratamientoFacialService: TratamientoFacialService,
               private modalService: NgbModal, private http: HttpService ) {

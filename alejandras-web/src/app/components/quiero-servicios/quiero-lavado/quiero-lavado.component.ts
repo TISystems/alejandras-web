@@ -17,7 +17,7 @@ export class QuieroLavadoComponent  {
   loading = false;
   buttionText = "Submit";
   lavado: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private lavadoService: LavadoService,
               private modalService: NgbModal, private http: HttpService ) {

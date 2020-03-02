@@ -17,7 +17,7 @@ export class QuieroCorteComponent {
   loading = false;
   buttionText = "Submit";
   corte: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private corteService: CorteService,
     private modalService: NgbModal, private http: HttpService ) {

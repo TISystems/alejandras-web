@@ -17,7 +17,7 @@ export class QuieroMaquillajeComponent  {
   loading = false;
   buttionText = "Submit";
   maquillaje: any = {};
-  correo="virpeza91@gmail.com";
+  correo="alejandrsalon@gmail.com";
 
   constructor(private activatedRoute: ActivatedRoute, private maquillajeService: MaquillajeService,
               private modalService: NgbModal, private http: HttpService ) {
