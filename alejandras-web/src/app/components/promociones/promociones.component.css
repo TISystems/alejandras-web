@@ -1,0 +1,39 @@
+.img-w-h {
+    width: 100%;
+}
+
+.btn-color {
+    color: #3D1058;
+    border: 1.5px solid #3D1058;
+}
+
+button:hover {
+    background-color: #3D1058;
+    color: white;
+}
+
+.font-color {
+    color: #3D1058;
+}
+
+.img-manicure {
+    height: 300px;
+}
+
+.bg-color {
+    background-color: #641672;
+}
+
+.p-center {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.img-w {
+    width: 50px;
+    height: 50px;
+}
+
+.ng-invalid.ng-touched:not(form) {
+    border: 1px solid red
+}

@@ -16,7 +16,6 @@ background-color: #7b1c8a;" class="col-sm-6">
                 <form #forma="ngForm" novalidate="">
                     <div class="form-group row ">
                         <div class="col-md-12 mb-3 ">
-                            <label class="font-colors" for="validationTooltip01">Nombre y Apellidos</label>
                             <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre y Apellidos">
                             <div mat-error *ngIf="nombre.errors?.required">
                                 <label class="font-colors">* requerido</label>
@@ -31,7 +30,6 @@ background-color: #7b1c8a;" class="col-sm-6">
                             </div>
                         </div>
                         <div class="col-md-12 mb-3 ">
-                            <label class="font-colors">Email</label>
                             <input [formControl]="emailFormControl" class="form-control" />
                             <div class="font-colors" *ngIf="emailFormControl.hasError('email')">
                                 Por favor ingrese un correo válido
@@ -41,7 +39,6 @@ background-color: #7b1c8a;" class="col-sm-6">
                             </div>
                         </div>
                         <div class="col-md-12 mb-3 ">
-                            <label class="font-colors" for="validationTooltip01">Asunto</label>
                             <input #asunto="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="asunto" ngModel type="text" class="form-control " placeholder="Ingrese Asunto">
                             <div *ngIf="asunto.errors?.required">
                                 <label class="font-colors">* requerido</label>
@@ -56,7 +53,6 @@ background-color: #7b1c8a;" class="col-sm-6">
                             </div>
                         </div>
                         <div class="col-md-12 mb-3 ">
-                            <label class="font-colors" for="validationTooltip01">Mensaje</label>
                             <textarea #mensaje="ngModel" minlength="10" class="form-control" rows="3" name="mensaje" ngModel placeholder="Ingrese su mensaje Aquí"></textarea>
                             <div *ngIf="mensaje.errors?.minlength">
                                 <label class="font-colors">Ingrese mínimo {{mensaje.errors.minlength.requiredLength}} caracteres</label>

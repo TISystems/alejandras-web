@@ -39,7 +39,7 @@
                         </a>
                         <a class="dropdown-item font-color" [routerLink]="['depilacion']">
                             <span class="imagen"><img src="assets/img/navbar/depilacion.jpg" ></span>
-                            <span class="text-item">Depilación Cera Tradicional</span>
+                            <span class="text-item">Depilación</span>
                             <span class="down-item"></span>
                         </a>
                         <a class="dropdown-item font-color" [routerLink]="['manicure-pedicure']">
@@ -149,7 +149,6 @@
                     <form #forma="ngForm" novalidate="">
                         <div class="form-group row ">
                             <div class="col-md-12 mb-3 ">
-                                <label class="font-color" for="validationTooltip01">Nombre</label>
                                 <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre y Apellidos">
                                 <div mat-error *ngIf="nombre.errors?.required">
                                     <label class="font-color">* requerido</label>
@@ -164,7 +163,6 @@
                                 </div>
                             </div>
                             <div class="col-md-12 mb-3">
-                                <label class="font-color">Número de teléfono</label>
                                 <input #telefono="ngModel" minlength="9" maxlength="9" pattern="^\d*$" required name="telefono" ngModel type="text" class="form-control " placeholder="Ingrese Teléfono">
                                 <div *ngIf="telefono.errors?.required">
                                     <label class="font-color">* requerido</label>
@@ -180,9 +178,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="font-color">Servicios Profesionales</label>
                             <select class="form-control" [formControl]="servicioFormControl">
-                                  <option value="">Seleccionar Servicio</option>
+                                  <option value="">Seleccionar Servicio a Reservar</option>
                                   <option value="PESTAÑAS">Pestañas</option>
                                   <option value="CEJAS">Cejas</option>
                                   <option value="MICROPIGMENTACIÓN">Micropigmentación</option>

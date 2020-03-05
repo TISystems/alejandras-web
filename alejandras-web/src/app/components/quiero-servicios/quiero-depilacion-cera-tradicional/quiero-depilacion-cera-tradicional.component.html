@@ -2,7 +2,7 @@
 
     <div class=" form-group row">
         <div class="col-md-4 ">
-            <img style="height: 250px !important;" [src]="depilacion.img" [alt]="depilacion.nombre" class="img-fluid zoom">
+            <img style="height: 60% !important;" [src]="depilacion.img" [alt]="depilacion.nombre" class="img-fluid zoom">
             <br><br>
             <button [routerLink]="['/depilacion']" class="btn  btn-block btn-color">Regresar a Depilación</button>
 
@@ -16,7 +16,7 @@
             <form #forma="ngForm" novalidate="">
                 <div class="form-group row ">
                     <div class="col-md-4 mb-3 ">
-                        <label class="font-color" for="validationTooltip01">Nombre</label>
+
                         <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre">
                         <div mat-error *ngIf="nombre.errors?.required">
                             <label class="font-color">* requerido</label>
@@ -33,8 +33,8 @@
 
                 </div>
                 <div class="form-row">
-                    <div class="col-md-3 mb-3">
-                        <label class="font-color">Número de teléfono</label>
+                    <div class="col-md-4 mb-3">
+
                         <input #telefono="ngModel" minlength="9" maxlength="9" pattern="^\d*$" required name="telefono" ngModel type="text" class="form-control " placeholder="Ingrese Teléfono">
                         <div *ngIf="telefono.errors?.required">
                             <label class="font-color">* requerido</label>
@@ -47,8 +47,40 @@
                             <label class="font-color">Ingrese solo números</label>
 
                         </div>
+
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="form-group mb-3 col-md-4">
+
+                        <select class="form-control" [formControl]="servicioFormControl">
+                    <option value="">Seleccionar Zona Depilación</option>
+                    <option value="AXILAS">Axilas</option>
+                    <option value="BOZO">Bozo</option>
+                    <option value="FRENTE">Frente</option>
+                  <option value="CEJAS">Cejas</option>
+                    <option value="NARIZ">Nariz</option>
+                  <option value="PATILLAS">Patillas</option>
+                    <option value="MENTON">Mentón</option>
+                    <option value="BOTOX">Medio Brazo</option>
+                    <option value="BRAZO COMPLETO">Brazo Completo</option>
+                    <option value="MEDIA PIERNA">Media Pierna </option>
+                    <option value="PIERNA COMPLETA">Pierna Completa</option>
+                    <option value="ESPALDA">Espalda</option>
+                    <option value="ABDOMEN">Abdomen</option>
+                    <option value="GLÚTEOS">Glúteos</option>
+                    <option value="CARA">Cara</option>
+                    <option value="REBAJE CORTO">Rebaje Corto</option>
+                    <option value="REBAJE LARGO">Rebaje Largo</option>
+                    <option value="REBAJE COMPLETO">Rebaje Completo</option>
+
+                  </select>
+                        <div>
+                            <div class="font-color" *ngIf="servicioFormControl.hasError('required')">Por favor, Selecciona una Zona</div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <button (click)="register(forma)" (click)="verMensaje(mensajeLLamado)" [disabled]="!forma.valid " type="button " class="btn btn-color ">Solicitar llamado</button>
 
@@ -56,6 +88,8 @@
 
             </form>
         </div>
+
+
 
     </div>
 </div>

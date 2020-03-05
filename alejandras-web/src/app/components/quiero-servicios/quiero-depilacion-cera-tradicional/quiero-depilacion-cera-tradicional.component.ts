@@ -18,6 +18,9 @@ export class QuieroDepilacionCeraTradicionalComponent  {
   buttionText = "Submit";
   depilacion: any = {};
   correo="alejandrsalon@gmail.com";
+  servicioFormControl = new FormControl("", [
+    Validators.required
+  ]);
 
   constructor(private activatedRoute: ActivatedRoute, private depilacionService: DepilacionService,
               private modalService: NgbModal, private http: HttpService ) {
@@ -35,7 +38,7 @@ export class QuieroDepilacionCeraTradicionalComponent  {
     let user = {
       nombre: forma.value.nombre,
       telefono: forma.value.telefono,
-      servicio: 'Depilación de ' + this.depilacion.nombre,
+      servicio: 'DEPILACIÓN DE ZONA ' + this.servicioFormControl.value,
       email: this.correo
     }
     console.log('nombnre usuario' + user);

@@ -1,3 +1,153 @@
-<p>
-    adlihfadklshfkldasfkldhsf dchdhfdhsf dfkdslkfdlisf dfhdsklfh
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <img src="assets/img/slider/Promo2.png" class="img-w-h" alt="...">
+        </div>
+        <div style="padding-top: 8%;" class="col-sm-3">
+            <button type="button" (click)="verMensaje(reservaHora)" class="btn  btn-block btn-color">¡ Solicitar Promoción! </button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div style="padding-top: 3%;" class="col-sm-9">
+            <img src="assets/img/slider/Promo1.png" class="img-w-h" alt="...">
+        </div>
+        <div style="padding-top: 10%;" class="col-sm-3">
+            <button type="button" (click)="verMensaje(reservaHora1)" class="btn  btn-block btn-color">¡ Solicitar Promoción !</button>
+        </div>
+
+    </div>
+
+
+    <ng-template #mensajeLLamado let-modal="dismiss ">
+        <div class="text-sm-center p-center ">
+            <img class="img-w " src="assets/img/iconos/comprobado.png "><br><br><br>
+            <span class="modal-dialog font-color ">Un Profesional de <b> SALÓN ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
+            <button [routerLink]="[ '/home'] " class="btn btn-color " (click)="modal( 'Close') ">Salir</button>
+        </div>
+    </ng-template>
+    <ng-template #reservaHora let-modal="dismiss" let-c="close">
+        <div class="modal-header">
+            <button type="button" class="close" (click)="c('')">x</button>
+        </div>
+        <div class="text-sm-center p-center ">
+
+            <div class="container">
+                <img src="assets/img/slider/Promo2.png" width="450">
+                <hr>
+                <div class="col-sm-12">
+                    <div class="starter-template">
+                        <form #forma="ngForm" novalidate="">
+                            <div class="form-group row ">
+                                <div class="col-md-12 mb-3 ">
+
+                                    <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre y Apellidos">
+                                    <div mat-error *ngIf="nombre.errors?.required">
+                                        <label class="font-color">* requerido</label>
+                                    </div>
+                                    <div *ngIf="nombre.errors?.minlength">
+                                        <label class="font-color">Ingrese mínimo {{nombre.errors.minlength.requiredLength}} caracteres</label>
+
+                                    </div>
+                                    <div *ngIf="nombre.errors?.pattern">
+                                        <label class="font-color">Ingrese solo letras</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+
+                                    <input #telefono="ngModel" minlength="9" maxlength="9" pattern="^\d*$" required name="telefono" ngModel type="text" class="form-control " placeholder="Ingrese Teléfono">
+                                    <div *ngIf="telefono.errors?.required">
+                                        <label class="font-color">* requerido</label>
+                                    </div>
+                                    <div *ngIf="telefono.errors?.minlength">
+                                        <label class="font-color">* Ingrese teléfono válido</label>
+                                    </div>
+
+                                    <div *ngIf="telefono.errors?.pattern">
+                                        <label class="font-color">Ingrese solo números</label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <button (click)="modal( 'Close') " (click)="verMensaje(mensajeLLamado)" type="button" [disabled]="!forma.valid  || loading" class="btn btn-color" color="primary" (click)="register(forma)">Solicitar</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </ng-template>
+
+    <ng-template #mensajeLLamado1 let-modal="dismiss ">
+        <div class="text-sm-center p-center ">
+            <img class="img-w " src="assets/img/iconos/comprobado.png "><br><br><br>
+            <span class="modal-dialog font-color ">Un Profesional de <b> SALÓN ALEJANDRAS</b> se pondrá en <br>contacto contigo dentro de poco</span><br><br><br>
+            <button [routerLink]="[ '/home'] " class="btn btn-color " (click)="modal( 'Close') ">Salir</button>
+        </div>
+    </ng-template>
+    <ng-template #reservaHora1 let-modal="dismiss" let-c="close">
+        <div class="modal-header">
+            <button type="button" class="close" (click)="c('')">x</button>
+        </div>
+        <div class="text-sm-center p-center ">
+
+            <div class="container">
+                <img src="assets/img/slider/Promo1.png" width="450">
+                <hr>
+                <div class="col-sm-12">
+                    <div class="starter-template">
+                        <form #forma="ngForm" novalidate="">
+                            <div class="form-group row ">
+                                <div class="col-md-12 mb-3 ">
+                                    <input #nombre="ngModel" minlength="3" pattern="^[A-Za-z\s]+$" required name="nombre" ngModel type="text" class="form-control " placeholder="Ingrese su Nombre y Apellidos">
+                                    <div mat-error *ngIf="nombre.errors?.required">
+                                        <label class="font-color">* requerido</label>
+                                    </div>
+                                    <div *ngIf="nombre.errors?.minlength">
+                                        <label class="font-color">Ingrese mínimo {{nombre.errors.minlength.requiredLength}} caracteres</label>
+
+                                    </div>
+                                    <div *ngIf="nombre.errors?.pattern">
+                                        <label class="font-color">Ingrese solo letras</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <input #telefono="ngModel" minlength="9" maxlength="9" pattern="^\d*$" required name="telefono" ngModel type="text" class="form-control " placeholder="Ingrese Teléfono">
+                                    <div *ngIf="telefono.errors?.required">
+                                        <label class="font-color">* requerido</label>
+                                    </div>
+                                    <div *ngIf="telefono.errors?.minlength">
+                                        <label class="font-color">* Ingrese teléfono válido</label>
+                                    </div>
+
+                                    <div *ngIf="telefono.errors?.pattern">
+                                        <label class="font-color">Ingrese solo números</label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <button (click)="modal( 'Close') " (click)="verMensaje(mensajeLLamado1)" type="button" [disabled]="!forma.valid  || loading" class="btn btn-color" color="primary" (click)="register1(forma)">Solicitar</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </ng-template>
+
+
+</div>

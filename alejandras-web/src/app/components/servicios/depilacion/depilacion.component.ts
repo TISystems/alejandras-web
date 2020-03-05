@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './depilacion.component.html',
   styleUrls: ['./depilacion.component.css']
 })
-export class DepilacionComponent {
+export class DepilacionComponent implements OnInit {
 
   galeriasDepilacion: InterfacePestania[] = [];
   constructor(private depilacionService: DepilacionService, private router: Router) { }
@@ -16,6 +16,7 @@ export class DepilacionComponent {
   ngOnInit() {
     this.galeriasDepilacion = this.depilacionService.getDepilaciones();
   }
+
   verDepilacion(idx: number) {
   this.router.navigate(['/quiero-depilacion-cera-tradicional', idx]);
 
