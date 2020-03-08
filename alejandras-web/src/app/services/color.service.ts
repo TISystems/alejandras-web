@@ -15,37 +15,37 @@ export class ColorService {
     {
       nombre: "Visos",
       descripcion: "Aporta matización y luminosidad al cabello.",
-      img: "assets/img/servicios/color/Visos/2.jpeg",
+      img: "assets/img/servicios/color/Visos/visos.jpg",
     },
     {
       nombre: "Mechas",
       descripcion: "Luminosidad focalizada.",
-      img: "assets/img/servicios/color/Mechas/mechas.jpeg",
+      img: "assets/img/servicios/color/Mechas/mechas1.jpg",
     },
     {
       nombre: "Mechas Californianas",
       descripcion: "Define color de medios a puntas.",
-      img: "assets/img/servicios/color/Mechas-Californianas/californiana.jpeg",
+      img: "assets/img/servicios/color/Mechas-Californianas/californianas.jpg",
     },
     {
       nombre: "Balayage",
       descripcion: "Luminosidad en degradé.",
-      img: "assets/img/servicios/color/Balayage/balayage.png",
+      img: "assets/img/servicios/color/Balayage/balayage.jpg",
     },
     {
       nombre: "Transparencias",
       descripcion: "Color en definición tenue.",
-      img: "assets/img/servicios/color/Transparencias/transparencia.jpeg",
+      img: "assets/img/servicios/color/Transparencias/transparencia.jpg",
     },
     {
       nombre: "BabyLight",
       descripcion: "Tono sobre tono en efecto transparencia.",
-      img: "assets/img/servicios/color/babylight/babylight.jpeg",
+      img: "assets/img/servicios/color/babylight/babylight.jpg",
     },
     {
       nombre: "Reflejos",
       descripcion: "Tono suave con gorra.",
-      img: "assets/img/servicios/color/Reflejos/reflejos.jpeg",
+      img: "assets/img/servicios/color/Reflejos/reflejos.jpg",
     }
 
 

@@ -10,7 +10,7 @@ export class DepilacionService {
     {
       nombre: "Cera Tradicional",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      img: "assets/img/servicios/depilacion-cera-tradicional/depilacion.jpeg",
+      img: "assets/img/servicios/depilacion-cera-tradicional/depilacion.jpg",
     }
 
 

@@ -2,13 +2,13 @@
 
     <div class=" form-group row">
         <div class="col-md-4 ">
-            <img style="height: 60% !important;" [src]="depilacion.img" [alt]="depilacion.nombre" class="img-fluid zoom">
+            <img style="height: 40% !important;" [src]="depilacion.img" [alt]="depilacion.nombre" class="img-fluid zoom">
             <br><br>
             <button [routerLink]="['/depilacion']" class="btn  btn-block btn-color">Regresar a Depilación</button>
 
         </div>
         <div class="col-md-8">
-            <h3 class="font-color">Depilación de {{depilacion.nombre}}</h3>
+            <h3 class="font-color">Depilación con {{depilacion.nombre}}</h3>
             <hr class="bg-color">
             <p class="font-color">{{depilacion.descripcion}}</p>
             <hr class="bg-color">

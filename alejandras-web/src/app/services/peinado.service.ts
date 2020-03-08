@@ -10,7 +10,7 @@ export class PeinadoService {
     {
       nombre: "Noche",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/peinados/Noche/noche.jpeg",
+      img: "assets/img/servicios/peinados/Noche/noche2.jpg",
     },
     {
       nombre: "Día",
@@ -20,17 +20,17 @@ export class PeinadoService {
     {
       nombre: "Novia",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/peinados/Novia/novia.jpeg",
+      img: "assets/img/servicios/peinados/Novia/novia1.jpg",
     },
     {
       nombre: "Fantasía",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/peinados/Fantasia/fantasia.jpeg",
+      img: "assets/img/servicios/peinados/Fantasia/fantasia1.jpg",
     },
     {
       nombre: "Trenzas",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/peinados/Trenzas/trenzas.jpeg",
+      img: "assets/img/servicios/peinados/Trenzas/trenzas.jpg",
     }
 
 

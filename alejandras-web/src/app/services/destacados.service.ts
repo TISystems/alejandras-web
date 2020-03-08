@@ -25,7 +25,7 @@ export class DestacadosService {
     {
       nombre: "Maquillaje Noche",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "assets/img/servicios/maquillaje/Noche/maquillaje-noche.jpeg",
+      img: "assets/img/servicios/maquillaje/Noche/maquillaje-noche.jpg",
     },
     {
       nombre: "Lavado con Secado",

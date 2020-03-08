@@ -10,17 +10,17 @@ export class CorteService {
     {
       nombre: "Corte Varón",
       descripcion: "Aporta estilo, condición y tendencia a gusto.",
-      img: "assets/img/servicios/cortes/varon/varon.jpeg",
+      img: "assets/img/servicios/cortes/varon/varon1.jpg",
     },
     {
       nombre: "Corte Dama",
       descripcion: "Aporta estilo, condición y tendencia a gusto.",
-      img: "assets/img/servicios/cortes/dama/dama.jpeg",
+      img: "assets/img/servicios/cortes/dama/dama.jpg",
     },
     {
       nombre: "Corte Niño",
       descripcion: "Aporta estilo, condición y tendencia a gusto.",
-      img: "assets/img/servicios/cortes/nino/nino.jpeg",
+      img: "assets/img/servicios/cortes/nino/nino.jpg",
     }
 
 

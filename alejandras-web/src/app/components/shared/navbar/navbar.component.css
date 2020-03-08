@@ -33,3 +33,41 @@ button:hover {
 .ng-invalid.ng-touched:not(form) {
     border: 1px solid red
 }
+
+.imagen {
+    bottom: 0;
+    height: 0px;
+    width: 0%;
+    z-index: 20;
+}
+
+.menu a:hover .imagen {
+    width: 100%;
+    height: 50%;
+}
+
+.menu a img {
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.text-item {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.down-item {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+
+.menu a {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a:hover .text-item {
+    text-align: center;
+}

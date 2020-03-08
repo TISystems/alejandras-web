@@ -19,7 +19,7 @@ export class ManicureService {
     {
       nombre: "Acrílicos",
       descripcion: "Son extensiones que se hacen a nuestra uña natural, para lograr el largo y la forma deseada.",
-      img: "assets/img/servicios/Manicure-pedicure/Acrilicos/acrilico.jpeg",
+      img: "assets/img/servicios/Manicure-pedicure/Acrilicos/kjh.jpg",
     },
     {
       nombre: "Kapping",
