@@ -39,7 +39,7 @@ export class QuieroMasajeCapilarComponent {
       email: this.correo
     }
     console.log('nombnre usuario' + user);
-    this.http.sendMailContacto("http://localhost:3000/sendmailservicio", user).subscribe(
+    this.http.sendMailContacto("http://128.168.41.181:3000/sendmailservicio", user).subscribe(
       data => {
         let res:any = data;
         console.log(

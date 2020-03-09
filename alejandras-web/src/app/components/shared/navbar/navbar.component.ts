@@ -31,7 +31,7 @@ export class NavbarComponent  {
         servicio: this.servicioFormControl.value,
         email: this.correo
       }
-      this.http.sendMailContacto("http://localhost:3000/sendmailreserva", user).subscribe(
+      this.http.sendMailContacto("http://128.168.41.181:3000/sendmailreserva", user).subscribe(
         data => {
           let res:any = data;
           console.log(
