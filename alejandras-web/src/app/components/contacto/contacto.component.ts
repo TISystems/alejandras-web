@@ -33,7 +33,7 @@ export class ContactoComponent implements OnInit {
         asunto: forma.value.asunto,
         mensaje: forma.value.mensaje,
       }
-      this.http.sendMailContacto("http://alejandras.us-3.evennode.com/sendmailcontacto", user).subscribe(
+      this.http.sendMailContacto("https://alejandras.us-3.evennode.com/sendmailcontacto", user).subscribe(
         data => {
           let res:any = data;
           console.log(
