@@ -16,7 +16,7 @@ export class QuieroTratamientoCorporalComponent  {
   loading = false;
   buttionText = "Submit";
   tratamientoCorporal: any = {};
-  correo="alejandrsalon@gmail.com";
+  correo="contacto@alejandras.cl";
 
   constructor(private activatedRoute: ActivatedRoute, private tratamientoCorporalService: TratamientoCorporalService,
               private modalService: NgbModal, private http: HttpService ) {
@@ -37,7 +37,7 @@ export class QuieroTratamientoCorporalComponent  {
       email: this.correo
     }
     console.log('nombnre usuario' + user);
-    this.http.sendMailContacto("http://128.168.41.181:3000/sendmailservicio", user).subscribe(
+    this.http.sendMailContacto("https://alejandras.us-3.evennode.com/sendmailservicio", user).subscribe(
       data => {
         let res:any = data;
         console.log(

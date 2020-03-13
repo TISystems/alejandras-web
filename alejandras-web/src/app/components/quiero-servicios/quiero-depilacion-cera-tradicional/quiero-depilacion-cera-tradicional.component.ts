@@ -17,7 +17,7 @@ export class QuieroDepilacionCeraTradicionalComponent  {
   loading = false;
   buttionText = "Submit";
   depilacion: any = {};
-  correo="alejandrsalon@gmail.com";
+  correo="contacto@alejandras.cl";
   servicioFormControl = new FormControl("", [
     Validators.required
   ]);
@@ -42,7 +42,7 @@ export class QuieroDepilacionCeraTradicionalComponent  {
       email: this.correo
     }
     console.log('nombnre usuario' + user);
-    this.http.sendMailContacto("http://128.168.41.181:3000/sendmailservicio", user).subscribe(
+    this.http.sendMailContacto("https://alejandras.us-3.evennode.com/sendmailservicio", user).subscribe(
       data => {
         let res:any = data;
         console.log(

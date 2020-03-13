@@ -17,7 +17,7 @@ export class QuieroBotoxComponent  {
   loading = false;
   buttionText = "Submit";
   botox: any = {};
-  correo="alejandrsalon@gmail.com";
+  correo="contacto@alejandras.cl";
 
   constructor(private activatedRoute: ActivatedRoute, private botoxService: BotoxService,
               private modalService: NgbModal, private http: HttpService ) {
@@ -39,7 +39,7 @@ export class QuieroBotoxComponent  {
       email: this.correo
     }
     console.log('nombnre usuario' + user);
-    this.http.sendMailContacto("http://128.168.41.181:3000/sendmailservicio", user).subscribe(
+    this.http.sendMailContacto("https://alejandras.us-3.evennode.com/sendmailservicio", user).subscribe(
       data => {
         let res:any = data;
         console.log(

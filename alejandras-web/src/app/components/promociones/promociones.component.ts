@@ -14,7 +14,7 @@ export class PromocionesComponent {
 
   loading = false;
   buttionText = "Submit";
-  correo="alejandrsalon@gmail.com";
+  correo="contacto@alejandras.cl";
 
 
   constructor(private http: HttpService, private modalService: NgbModal) { }
@@ -28,7 +28,7 @@ export class PromocionesComponent {
       email: this.correo
     }
 
-    this.http.sendMailContacto("http://localhost:3000/sendmailpromocion", user).subscribe(
+    this.http.sendMailContacto("http:https://alejandras.us-3.evennode.com/sendmailpromocion", user).subscribe(
       data => {
         let res:any = data;
         console.log(
@@ -55,7 +55,7 @@ export class PromocionesComponent {
       email: this.correo
     }
 
-    this.http.sendMailContacto("http://128.168.41.181:3000/sendmailpromocion", user).subscribe(
+    this.http.sendMailContacto("https://alejandras.us-3.evennode.com/sendmailpromocion", user).subscribe(
       data => {
         let res:any = data;
         console.log(
