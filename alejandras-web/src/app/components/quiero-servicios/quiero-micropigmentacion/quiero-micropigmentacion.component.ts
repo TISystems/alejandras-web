@@ -37,7 +37,6 @@ export class QuieroMicropigmentacionComponent  {
       servicio: this.galeriaMicropigmentacion.nombre,
       email: this.correo
     }
-    console.log('nombnre usuario' + user);
     this.http.sendMailContacto("https://alejandras.us-3.evennode.com/sendmailservicio", user).subscribe(
       data => {
         let res:any = data;

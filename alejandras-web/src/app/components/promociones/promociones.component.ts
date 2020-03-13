@@ -28,7 +28,7 @@ export class PromocionesComponent {
       email: this.correo
     }
 
-    this.http.sendMailContacto("http:https://alejandras.us-3.evennode.com/sendmailpromocion", user).subscribe(
+    this.http.sendMailContacto("https://alejandras.us-3.evennode.com/sendmailpromocion", user).subscribe(
       data => {
         let res:any = data;
         console.log(
