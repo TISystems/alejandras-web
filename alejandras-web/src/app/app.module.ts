@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
 import { APP_ROUTING } from './app.routes';
@@ -130,6 +131,7 @@ import { QuieroDestacadosComponent } from './components/quiero-servicios/quiero-
 
   ],
   providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
     ManicureService,
     AlisadoService,
     BotoxService,

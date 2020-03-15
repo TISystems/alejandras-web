@@ -13,15 +13,16 @@ export class DestacadosService {
       img: "assets/img/servicios/botox/botox-1.jpg",
     },
     {
-      nombre: "Tratamiento Corporal",
-      descripcion: "Tratamiento con aparato que produce ondas ultrasónicas de alta potencia, a nivel de la superficie externa de la piel.",
-      img: "assets/img/servicios/tratamiento-corporal/corporal.jpeg",
-    },
-    {
       nombre: "Planchado de Cejas",
       descripcion: "El planchado de cejas consiste en aplicar una crema alisadora que ayuda a que sea más fácil moldear las cejas.",
       img: "assets/img/servicios/cejas/planchado/GGVI6885.JPG",
     },
+    {
+      nombre: "Tratamiento Corporal",
+      descripcion: "Tratamiento con aparato que produce ondas ultrasónicas de alta potencia, a nivel de la superficie externa de la piel.",
+      img: "assets/img/servicios/tratamiento-corporal/corporal.jpeg",
+    },
+
     {
       nombre: "Maquillaje Noche",
       descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
