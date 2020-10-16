@@ -14,7 +14,12 @@ export class PromocionesComponent {
 
   loading = false;
   prueba = false;
+<<<<<<< HEAD
   cherry=true;
+=======
+  probandocherry=true;
+
+>>>>>>> 33256aa... probando cherry
   buttionText = "Submit";
   correo="contacto@alejandras.cl";
 
