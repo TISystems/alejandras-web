@@ -13,6 +13,7 @@ import { FormControl, Validators } from "@angular/forms";
 export class PromocionesComponent {
 
   loading = false;
+  prueba = false;
   buttionText = "Submit";
   correo="contacto@alejandras.cl";
 
