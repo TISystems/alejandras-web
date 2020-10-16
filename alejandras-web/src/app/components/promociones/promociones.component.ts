@@ -15,6 +15,7 @@ export class PromocionesComponent {
   loading = false;
   prueba = false;
   probandocherry=true;
+  probandocherry-pick=true;
 
   buttionText = "Submit";
   correo="contacto@alejandras.cl";
